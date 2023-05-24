@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../styles/Resume.module.css'
 
 const ContactInfo = {
   name: 'Arjay Beltran',
@@ -7,7 +8,8 @@ const ContactInfo = {
 };
 
 const Websites = [
-  { name: 'Portfolio', url: '#' },
+
+  { name: 'Portfolio', url: '/' }, //    change to deploy url
   { name: 'GitHub', url: 'https://github.com/Arjybltrn' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/arjaybeltran/' },
 ];

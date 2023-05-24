@@ -7,9 +7,16 @@ import styles from '../styles/index.module.css';
 
 export default function Home() {
   return (
+    <>
+    <h1> ARJAY BELTRAN </h1>
+    <h2>Junior Software Engineer</h2>
+    
     <Layout>
+
+
       <div className={styles.container}>
 
+        
         {/* bio */}
         <section className={styles.section}>
           <h1 id="bio" className={styles.title}>Welcome to My Portfolio</h1>
@@ -45,5 +52,6 @@ export default function Home() {
 
       </div>
     </Layout>
-  );
+    </>
+  )
 }

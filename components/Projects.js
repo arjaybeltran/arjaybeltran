@@ -5,22 +5,26 @@ const projects = [
     {
         name: 'HELLO WORLD',
         description: 'Search a country and find basic information about it',
-        liveSite: 'https://hello-world-rose-sigma.vercel.app/'
+        liveSite: 'https://hello-world-rose-sigma.vercel.app/',
+        img: '#'
     } ,
     {
         name: 'docket',
         description: 'To do list',
-        liveSite: 'https://docket-project-two.herokuapp.com/'
+        liveSite: 'https://docket-project-two.herokuapp.com/',
+        img: '#'
     } ,
     {
         name: 'Choruso',
         description: 'Music Application - [Group Project] ',
-        liveSite: 'https://choruso.herokuapp.com/'
+        liveSite: 'https://choruso.herokuapp.com/',
+        img: '#'
     } ,
     {
         name: 'Trackly',
         description: 'Job Application Tracker',
-        liveSite: 'https://legendary-halva-8abb3f.netlify.app/'
+        liveSite: 'https://legendary-halva-8abb3f.netlify.app/',
+        img: '#'
     } ,
 
 ]
@@ -35,6 +39,9 @@ export default function Projects() {
             <a href={project.liveSite} target="_blank" rel="noopener noreferrer">
               Visit Live Site
             </a>
+            <div className='screenshot'>
+                <img src={project.img} alt="screenshot"/>
+            </div>
           </div>
         ))}
       </div>
