@@ -1,0 +1,16 @@
+html {
+    scroll-behavior: smooth;
+    background-color: grey;
+    color: whitesmoke;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin: 50px;
+}
+
+
+

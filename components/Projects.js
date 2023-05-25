@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Project.module.css'
+
 
 const projects = [
     {
@@ -33,7 +33,8 @@ export default function Projects() {
     return (
       <div className='project-card'>
         {projects.map((project, index) => (
-          <div key={index} className={styles.project}>
+
+          <div key={index}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <a href={project.liveSite} target="_blank" rel="noopener noreferrer">

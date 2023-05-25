@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/Footer.module.css'
+
 
 export default function Footer() {
   return (
@@ -11,6 +11,12 @@ export default function Footer() {
         </li>
         <li>
           <Link href="https://linkedin.com/in/arjaybeltran">LinkedIn</Link>
+        </li>
+        <li>
+          <Link href="https://linkedin.com/in/arjaybeltran">Facebook</Link>
+        </li>
+        <li>
+          <Link href="https://linkedin.com/in/arjaybeltran">Instagram</Link>
         </li>
       </ul>
     </footer>
