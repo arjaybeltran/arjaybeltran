@@ -17,17 +17,26 @@ body {
     grid-template-columns: 400px 1fr;
 }
 .left-el {
-    width: 200px; /* Adjust the width as needed */
+    width: 400px;
     padding: 10px;
     z-index: 100;
     position: fixed;
     top: 100px; /* Adjust the top position as needed */
     left: 100px; /* Adjust the left position as needed */
   }
-  
+
+nav ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: black;
+}
   
 .main {
     grid-column: 2 / 3;
+    margin-top: 100px; 
 }
 
 /* .layout {
@@ -36,22 +45,23 @@ body {
 } */
 
 .title {
-    margin: 20px;
+    margin: 120px 20px 20px 20px;
 }
 
 #bio {
-    margin: 20px;
+    margin: 20px 20px 50px 20px;
 }
+
 .education {
-    margin: 20px;
+    margin: 20px 20px 50px 20px;
 }
 .exp {
-    margin:20px;
+    margin:20px 20px 50px 20px;
 }
 
 .project-card {
     border:solid 1px black;
-    margin: 20px;
+    margin:20px 20px 50px 20px;
     display:grid;
 }
 
@@ -59,3 +69,38 @@ body {
     background-color: beige;
     color: grey;
 }
+
+
+footer {
+    position: sticky;
+    bottom: 0;
+    padding-bottom: 50px;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+  footer ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-icon {
+    color:whitesmoke;
+  }
+
+  .footer-icon:hover {
+    color:black;
+  }
+
+
+  
+  
+  

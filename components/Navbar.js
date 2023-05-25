@@ -1,26 +1,44 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
   return (
-    <div className='left-el navbar'>
+    <div className='left-el'>
       <h1>ARJAY BELTRAN</h1>
-      <nav>
+      <nav className='navbar'>
         <ul>
           <li>
-            <Link to='bio' smooth={true} duration={50}>
+            <ScrollLink
+              to='bio'
+              spy={true}
+              smooth={true}
+              offset={-100} // Adjust the offset value according to your margin
+              duration={50}
+            >
               BIO
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link to='projects' smooth={true} duration={50}>
+            <ScrollLink
+              to='projects'
+              spy={true}
+              smooth={true}
+              offset={-100} // Adjust the offset value according to your margin
+              duration={50}
+            >
               PROJECTS
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link to='resume' smooth={true} duration={50}>
+            <ScrollLink
+              to='resume'
+              spy={true}
+              smooth={true}
+              offset={-100} // Adjust the offset value according to your margin
+              duration={50}
+            >
               RESUME
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
       </nav>
