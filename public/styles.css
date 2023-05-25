@@ -11,14 +11,17 @@ body {
     display: grid;
   
 }
-
+.index {
+    margin: 35px 300px 0 300px;
+}
 .layout{
     display:grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .left-el {
     width: 400px;
     padding: 10px;
+    margin-left: 300px;
     z-index: 100;
     position: fixed;
     top: 100px; /* Adjust the top position as needed */
@@ -36,7 +39,6 @@ nav ul li:hover {
   
 .main {
     grid-column: 2 / 3;
-    margin-top: 100px; 
 }
 
 /* .layout {
@@ -49,19 +51,19 @@ nav ul li:hover {
 }
 
 #bio {
-    margin: 20px 20px 50px 20px;
+    margin: 35px 20px 50px 20px;
 }
 
 .education {
-    margin: 20px 20px 50px 20px;
+    margin: 35px 20px 50px 20px;
 }
 .exp {
-    margin:20px 20px 50px 20px;
+    margin:35px 20px 50px 20px;
 }
 
 .project-card {
     border:solid 1px black;
-    margin:20px 20px 50px 20px;
+    margin: 35px 20px 50px 20px;
     display:grid;
 }
 
