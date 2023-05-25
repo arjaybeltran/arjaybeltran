@@ -8,33 +8,30 @@ import '../public/styles.css';
 
 export default function Home() {
   return (
-    <>
-        <Head>
-            <title>Arjay Beltran</title>
-        </Head>
-      <h1>ARJAY BELTRAN</h1>
-      <h2>Junior Software Engineer</h2>
+    <div className='index'>
+      <Head>
+        <title>Arjay Beltran</title>
+      </Head>
       <Layout>
-        <div className="container">
+        <div className='container'>
           {/* bio */}
-          <section id="bio" className="section">
-            <h1 className="title">Welcome to My Portfolio</h1>
+          <section id='bio' className='section'>
             <Bio />
           </section>
 
           {/* projects */}
-          <section id="projects" className="section">
-            <h2 className="title">Projects</h2>
+          <section id='projects' className='section'>
+            <h2 className='title'>Projects</h2>
             <Projects />
           </section>
 
           {/* resume */}
-          <section id="resume" className="section">
-            <h2 className="title">Resume</h2>
+          <section id='resume' className='section'>
+            <h2 className='title'>Resume</h2>
             <Resume />
           </section>
         </div>
       </Layout>
-    </>
+    </div>
   );
 }

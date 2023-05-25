@@ -1,23 +1,29 @@
-import Link from 'next/link';
-
+import React from 'react';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   return (
-    <nav className='navbar'>
-      <ul>
-      <li>
-          <Link href="/">HOME</Link>
-        </li>
-        <li>
-          <Link href="#bio">BIO</Link>
-        </li>
-        <li>
-          <Link href="#projects">PROJECTS</Link>
-        </li>
-        <li>
-          <Link href="#resume">RESUME</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className='left-el navbar'>
+      <h1>ARJAY BELTRAN</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link to='bio' smooth={true} duration={50}>
+              BIO
+            </Link>
+          </li>
+          <li>
+            <Link to='projects' smooth={true} duration={50}>
+              PROJECTS
+            </Link>
+          </li>
+          <li>
+            <Link to='resume' smooth={true} duration={50}>
+              RESUME
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }

@@ -70,7 +70,7 @@ const WorkHistory = [
     return (
       <div>
   
-        <section>
+        {/* <section>
           <h3>Contact</h3>
           <p>
             <strong>Name:</strong> {ContactInfo.name}
@@ -124,12 +124,13 @@ const WorkHistory = [
               ))}
             </ul>
           </div>
-        </section>
+        </section> */}
   
         <section>
-          <h3>Education</h3>
+          
           {Education.map((edu, index) => (
-            <div key={index}>
+            <div key={index} className='education'>
+              <h3>Education</h3>
               <h4>{edu.degree}</h4>
               <p>{edu.institution}</p>
               <p>{edu.year}</p>
@@ -138,9 +139,10 @@ const WorkHistory = [
         </section>
   
         <section>
-          <h3>Work History</h3>
+          
           {WorkHistory.map((job, index) => (
-            <div key={index}>
+            <div key={index} className='exp'>
+              <h3>Work History</h3>
               <h4>{job.position}</h4>
               <p>
                 {job.company} - {job.location}
