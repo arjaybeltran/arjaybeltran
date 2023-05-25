@@ -21,13 +21,13 @@ export default function Home() {
 
           {/* projects */}
           <section id='projects' className='section'>
-            <h2 className='title'>Projects</h2>
+            <h2 className='title'>projects</h2>
             <Projects />
           </section>
 
           {/* resume */}
           <section id='resume' className='section'>
-            <h2 className='title'>Resume</h2>
+            <h2 className='title'>experience</h2>
             <Resume />
           </section>
         </div>

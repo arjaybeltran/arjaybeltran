@@ -141,7 +141,7 @@ const WorkHistory = [
         <section>
           
           {WorkHistory.map((job, index) => (
-            <div key={index} className='exp'>
+            <div key={index} className='experience'>
               <h3>Work History</h3>
               <h4>{job.position}</h4>
               <p>

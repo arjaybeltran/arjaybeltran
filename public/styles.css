@@ -7,7 +7,6 @@ html {
 
 body {
     scroll-behavior: smooth;
-    margin: 100px;
     display: grid;
   
 }
@@ -26,6 +25,7 @@ body {
     position: fixed;
     top: 100px; /* Adjust the top position as needed */
     left: 100px; /* Adjust the left position as needed */
+    margin-top: 50px;
   }
 
 nav ul {
@@ -41,42 +41,109 @@ nav ul li:hover {
     grid-column: 2 / 3;
 }
 
-/* .layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-} */
-
 .title {
-    margin: 120px 20px 20px 20px;
+    margin: 150px 20px 20px 20px;
+    font-size: 50px;
+    text-align: center;
 }
 
 #bio {
-    margin: 35px 20px 50px 20px;
+    margin: 100px 20px 50px 20px;
+    width: auto;
 }
+
+.bio-text{
+    letter-spacing: 1px;
+}
+h1 {
+    letter-spacing: 4px;
+    font-size: 60px;
+}
+
+.profile-photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 120px;
+}
+
+
+
+/* navbar css */
+
+.navbar ul li {
+    letter-spacing: 4px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .navbar li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: lightgray;
+    transition: width 0.2s ease;
+  }
+
+  .navbar li:hover::after {
+    width: 40%;
+  }
+
+/* ------------------------- */
+
 
 .education {
     margin: 35px 20px 50px 20px;
 }
-.exp {
+.experience {
     margin:35px 20px 50px 20px;
 }
 
 .project-card {
     border:solid 1px black;
     margin: 35px 20px 50px 20px;
+    height: 150px;
+    width: auto;
     display:grid;
+    grid-template-columns: 1fr 2fr;
+
 }
+.project-ss {
+    height: 70px;
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
 
 .project-card:hover {
     background-color: beige;
     color: grey;
 }
 
+/* footer css */
 
 footer {
     position: sticky;
     bottom: 0;
     padding-bottom: 50px;
+    margin-left: 80px;
   }
   
   footer ul {
@@ -86,7 +153,6 @@ footer {
   }
   
   footer ul li {
-    margin-bottom: 10px;
     padding-right: 10px;
   }
   
@@ -101,6 +167,10 @@ footer {
   .footer-icon:hover {
     color:black;
   }
+
+/* ------------------------ */
+
+
 
 
   

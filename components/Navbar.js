@@ -4,7 +4,11 @@ import { Link as ScrollLink } from 'react-scroll';
 export default function Navbar() {
   return (
     <div className='left-el'>
-      <h1>ARJAY BELTRAN</h1>
+        <div className='profile'>
+            <img className="profile-photo" src="/images/pp.jpeg" alt="profile photo" />
+        <h1>arjay beltran</h1>
+        </div>
+      
       <nav className='navbar'>
         <ul>
           <li>
@@ -12,10 +16,10 @@ export default function Navbar() {
               to='bio'
               spy={true}
               smooth={true}
-              offset={-100} // Adjust the offset value according to your margin
+              offset={-150} // Adjust the offset value according to your margin
               duration={50}
             >
-              BIO
+              // bio.
             </ScrollLink>
           </li>
           <li>
@@ -23,10 +27,10 @@ export default function Navbar() {
               to='projects'
               spy={true}
               smooth={true}
-              offset={-100} // Adjust the offset value according to your margin
+              offset={-150} // Adjust the offset value according to your margin
               duration={50}
             >
-              PROJECTS
+              // projects.
             </ScrollLink>
           </li>
           <li>
@@ -34,10 +38,10 @@ export default function Navbar() {
               to='resume'
               spy={true}
               smooth={true}
-              offset={-100} // Adjust the offset value according to your margin
+              offset={-150} // Adjust the offset value according to your margin
               duration={50}
             >
-              RESUME
+              // experience.
             </ScrollLink>
           </li>
         </ul>

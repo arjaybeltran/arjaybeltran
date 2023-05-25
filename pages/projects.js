@@ -7,7 +7,6 @@ export default function ProjectsPage() {
 
     return (
       <Layout>
-        <h1>PROJECTS</h1>
         <Projects />
       </Layout>
     );

@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Bio() {
 
-    const bio = `I transitioned from home renovation to Software Engineering driven by curiosity and problem-solving. Proficient in JavaScript, Express, Node.js, Python, React, HTML, CSS, MVC framework, and REST APIs, I excel in collaboration and efficient code management using Git. With a solid foundation in software development principles, project management, and attention to detail from my background, I bring a unique perspective to finding innovative solutions. As a lifelong learner, I adapt swiftly, stay updated on industry trends, and thrive in collaborative environments. Effective communication and teamwork are natural strengths of mine, making me an ideal, results-oriented software engineer ready to make a meaningful impact.`
+    const bio = `I transitioned from Home Renovation to Software Engineering driven by curiosity and problem-solving. Proficient in JavaScript, Express, Node.js, Python, React, HTML, CSS, MVC framework, and REST APIs, I excel in collaboration and efficient code management using Git. With a solid foundation in software development principles, project management, and attention to detail from my background, I bring a unique perspective to finding innovative solutions. As a lifelong learner, I adapt swiftly, stay updated on industry trends, and thrive in collaborative environments. Effective communication and teamwork are natural strengths of mine, making me an ideal, results-oriented software engineer ready to make a meaningful impact.`
 
     const biop2 = `I embarked on an exciting career transition from the world of home renovation
     to the dynamic field of software engineering, driven by my insatiable curiosity and desire to solve complex problems. 
@@ -25,7 +25,7 @@ export default function Bio() {
     `
   return (
     <div>
-      <p>{bio}</p>
+      <p className='bio-text'>{bio}</p>
       {/* <p>{biop2}</p>
       <p>{biop3}</p>
       <p>{biop4}</p> */}
