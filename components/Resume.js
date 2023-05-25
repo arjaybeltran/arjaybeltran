@@ -1,5 +1,6 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactInfo = {
   name: 'Arjay Beltran',
@@ -67,7 +68,13 @@ const WorkHistory = [
   ]
 
   export default function Resume() {
+    useEffect(() => {
+      AOS.init();
+    }, []);
+
     return (
+
+
       <div>
   
         {/* <section>
@@ -129,7 +136,7 @@ const WorkHistory = [
         <section>
           
           {Education.map((edu, index) => (
-            <div key={index} className='education'>
+            <div key={index} className='education' data-aos="fade-right">
               <h3>Education</h3>
               <h4>{edu.degree}</h4>
               <p>{edu.institution}</p>
@@ -141,7 +148,7 @@ const WorkHistory = [
         <section>
           
           {WorkHistory.map((job, index) => (
-            <div key={index} className='experience'>
+            <div key={index} className='experience' data-aos="fade-left">
               <h3>Work History</h3>
               <h4>{job.position}</h4>
               <p>

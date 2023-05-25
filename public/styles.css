@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    background-color: grey;
+    background-color: #222;
     color: whitesmoke;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav ul li:hover {
-    color: black;
+    color: #555;
 }
   
 .main {
@@ -97,7 +97,7 @@ h1 {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: lightgray;
+    background-color: #333;
     transition: width 0.2s ease;
   }
 
@@ -105,25 +105,56 @@ h1 {
     width: 40%;
   }
 
+
 /* ------------------------- */
 
 
 .education {
     margin: 35px 20px 50px 20px;
-}
-.experience {
-    margin:35px 20px 50px 20px;
-}
-
-.project-card {
-    border:solid 1px black;
-    margin: 35px 20px 50px 20px;
     height: 150px;
     width: auto;
     display:grid;
     grid-template-columns: 1fr 2fr;
-
+   
+      border: 3px solid;
+      border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
+      border-image-slice: 1;
 }
+.experience {
+    margin: 35px 20px 50px 20px;
+    height: auto;
+    width: auto;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    border: 3px solid;
+    border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
+    border-image-slice: 1;
+}
+
+.project-card {
+    margin: 35px 20px 20px 20px;
+    height: 150px;
+    width: auto;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+   
+      border: 3px solid;
+      border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
+      border-image-slice: 1;
+    
+  }
+
+
+
+  .project-card {
+    --border: 3px;
+    --color1: #6be89b;
+    --color2: #0076a5;
+    --from: 30deg;
+    --distance: 46%;
+  }
+
+
 .project-ss {
     height: 70px;
     width: 100px;
@@ -133,8 +164,9 @@ h1 {
 
 
 .project-card:hover {
-    background-color: beige;
-    color: grey;
+    background-color: #333;
+    color: beige;
+    cursor: pointer;
 }
 
 /* footer css */
@@ -170,9 +202,47 @@ footer {
 
 /* ------------------------ */
 
+.profile {
+  --border: 3px;
+  --color1: #6be89b;
+  --color2: #0076a5;
+  --from: 30deg;
+  --distance: 46%;
+}
 
+.profile {
+  position: relative;
+  padding: 30px;
+}
+.profile::after {
+  content: '';
+  border-radius: 999px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: conic-gradient(
+    from var(--from),
+    var(--color1),
+    var(--color2) var(--distance),
+    transparent var(--distance)
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--border)),
+    #fff calc(100% - var(--border) + 1px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--border)),
+    #fff calc(100% - var(--border) + 1px)
+  );
+}
+.profile-photo {
+  border-radius: 999px;
+  display: block;
+}
 
-
-  
-  
-  
+/* -------------- */

@@ -1,6 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
+  
+
+
+ 
 
 const projects = [
     {
@@ -31,6 +38,12 @@ const projects = [
 ]
 
 export default function Projects() {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);  
+      
+    
     const [hoveredIndex, setHoveredIndex] = useState(null);
   
     const handleCardHover = (index) => {
@@ -42,7 +55,7 @@ export default function Projects() {
         <div className='project-container' >
           {projects.map((project, index) => (
             <div
-              key={index} 
+              key={index}
               className={`project-card ${index === hoveredIndex ? 'hovered' : ''}`}
               onMouseEnter={() => handleCardHover(index)}
               onMouseLeave={() => handleCardHover(null)}

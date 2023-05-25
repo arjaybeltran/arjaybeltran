@@ -3,11 +3,3 @@ const nextConfig = {}
 
 module.exports = nextConfig
 
-
-// next.config.js
-module.exports = {
-    css: {
-      modules: true,
-    },
-  };
-  

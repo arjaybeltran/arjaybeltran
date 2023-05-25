@@ -1,10 +1,21 @@
-import React from 'react';
+
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Head from 'next/head';
 
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+  
 
 export default function Layout ({ children }) {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className='layout'>
         <Head>
