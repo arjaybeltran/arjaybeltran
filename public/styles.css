@@ -12,23 +12,28 @@ body {
   
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+.layout{
+    display:grid;
+    grid-template-columns: 400px 1fr;
+}
+.left-el {
     width: 200px; /* Adjust the width as needed */
-    height: 100vh;
     padding: 10px;
     z-index: 100;
+    position: fixed;
+    top: 100px; /* Adjust the top position as needed */
+    left: 100px; /* Adjust the left position as needed */
   }
-
   
+  
+.main {
+    grid-column: 2 / 3;
+}
 
-
-.layout {
+/* .layout {
     display: grid;
     grid-template-columns: 1fr 2fr;
-}
+} */
 
 .title {
     margin: 20px;
