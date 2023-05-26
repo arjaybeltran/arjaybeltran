@@ -7,7 +7,6 @@ export default function Navbar() {
     
         <div className='profile'>
             <img className="profile-photo" src="/images/pp.jpeg" alt="profile photo" />
-            
         <h1>arjay beltran</h1>
         </div>
 
