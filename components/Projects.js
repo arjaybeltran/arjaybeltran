@@ -52,6 +52,7 @@ export default function Projects() {
             <div
               key={index}
               className="project-card" data-aos="fade-up"
+              data-aos-anchor-placement="center-center"
            
             >
                 
