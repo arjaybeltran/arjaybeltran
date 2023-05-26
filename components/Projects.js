@@ -11,14 +11,14 @@ import 'aos/dist/aos.css';
 
 const projects = [
     {
-        name: 'HELLO WORLD',
+        name: '// HLLO WRLD',
         description: 'Search a country and find basic information about it',
         liveSite: 'https://hello-world-rose-sigma.vercel.app/',
         img: '/images/helloworld.png',
         technologies: ['JavaScript', 'HTML', 'CSS', 'AJAX'],
     } ,
     {
-        name: 'docket',
+        name: 'docket.',
         description: 'To do list',
         liveSite: 'https://docket-project-two.herokuapp.com/',
         img: '/images/docket.png',
@@ -36,7 +36,7 @@ const projects = [
         description: 'Job Application Tracker',
         liveSite: 'https://legendary-halva-8abb3f.netlify.app/',
         img: '/images/trackly.png',
-        technologies: ['React', 'Node.js', 'MongoDB', 'CSS', 'HTML'],
+        technologies: ['React', 'Node.js', 'MongoDB', 'Express.js'],
     } ,
 
 ]

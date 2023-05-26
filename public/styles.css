@@ -120,6 +120,7 @@ h1 {
     border: 3px solid;
     border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
     border-image-slice: 1;
+    border-radius: 15px;
 }
 .experience {
     margin: 35px 20px 50px 20px;
@@ -130,6 +131,7 @@ h1 {
     border: 3px solid;
     border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
     border-image-slice: 1;
+    border-radius: 15px;
 }
 
 .project-card {
@@ -141,15 +143,21 @@ h1 {
     border: 3px solid;
     border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
     border-image-slice: 1;
+    border-radius: 15px;
 }
 
 .tech-list {
   list-style: none;
   display:flex;
+  
 }
 
 .tech-list li {
   margin-right: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 5px;
+
 }
 
 .tech-list li:last-child {
