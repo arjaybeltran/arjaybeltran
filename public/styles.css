@@ -111,14 +111,13 @@ h1 {
 
 .education {
     margin: 35px 20px 50px 20px;
-    height: 150px;
+    height: auto;
     width: auto;
     display:grid;
     grid-template-columns: 1fr 2fr;
-   
-      border: 3px solid;
-      border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
-      border-image-slice: 1;
+    border: 3px solid;
+    border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
+    border-image-slice: 1;
 }
 .experience {
     margin: 35px 20px 50px 20px;
@@ -137,12 +136,10 @@ h1 {
     width: auto;
     display:grid;
     grid-template-columns: 1fr 2fr;
-   
-      border: 3px solid;
-      border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
-      border-image-slice: 1;
-    
-  }
+    border: 3px solid;
+    border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
+    border-image-slice: 1;
+}
 
 
 
@@ -202,6 +199,8 @@ footer {
 
 /* ------------------------ */
 
+
+/* profile half moon border */
 .profile {
   --border: 3px;
   --color1: #6be89b;
@@ -244,5 +243,20 @@ footer {
   border-radius: 999px;
   display: block;
 }
+
+/* -------------- */
+
+
+/* work history */
+
+.experience, .education {
+  padding: 15px;
+}
+
+.resp {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+
 
 /* -------------- */

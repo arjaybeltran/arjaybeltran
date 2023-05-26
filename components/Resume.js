@@ -45,10 +45,7 @@ const WorkHistory = [
       location: 'Toronto, ON',
       duration: '03/2022 to 03/2023',
       responsibilities: [
-        'Consistently completing work orders and service calls to exceed customer expectations as a representative of the company.',
-        'Concluding investigative inspections, diagnosis, and repair, including drywall repair, minor fixture & millwork repair, painting, caulking, minor flooring, grouting, minor plumbing, and more.',
-        'Communicating proficiently and professionally with supervisors, co-workers, clients, and trades.',
-        'Documenting service notes, material & trade requirements, and providing status updates for all work orders.',
+         'I consistently exceed customer expectations by completing work orders and service calls as a company representative. I excel in inspections, diagnosis, and repair, including tasks like drywall repair, painting, minor plumbing, and more. I communicate professionally with supervisors, co-workers, clients, and trades, while documenting service notes and providing timely updates for all work orders.',
       ],
     },
     {
@@ -57,11 +54,7 @@ const WorkHistory = [
       location: 'Toronto, ON',
       duration: '10/2021 to 03/2022',
       responsibilities: [
-        'Effectively used power tools, hand tools, and various auxiliary instruments to complete projects within the allotted time frame.',
-        'Determined materials needs, estimated production/materials costs, and prioritized tasks to avoid any project delays.',
-        'Inspected each job site before and after project completion to ensure projects are completed properly and to standard.',
-        'Researched and maintained full compliance with municipal building codes and health and safety regulations.',
-        'Ensured client satisfaction on all projects by meeting client needs and finding solutions for any client concerns/requests.',
+        'I efficiently utilized power tools, hand tools, and auxiliary instruments to meet project deadlines. I assessed material requirements, estimated production costs, and prioritized tasks to prevent delays. I conducted thorough inspections of job sites pre and post-project completion to ensure adherence to standards. I consistently researched and complied with building codes and safety regulations. By addressing client needs and resolving concerns promptly, I ensured overall client satisfaction on every project.',
       ],
     },
 
@@ -155,11 +148,7 @@ const WorkHistory = [
                 {job.company} - {job.location}
               </p>
               <p>{job.duration}</p>
-              <ul>
-                {job.responsibilities.map((responsibility, i) => (
-                  <li key={i}>{responsibility}</li>
-                ))}
-              </ul>
+              <p className='resp'>{job.responsibilities}</p>
             </div>
           ))}
         </section>
