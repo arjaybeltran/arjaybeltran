@@ -45,6 +45,7 @@ nav ul li:hover {
     margin: 150px 20px 20px 20px;
     font-size: 50px;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 #bio {
@@ -260,3 +261,8 @@ footer {
 
 
 /* -------------- */
+
+.education:hover, .experience:hover {
+  background-color: #333;
+  cursor: pointer;
+}

@@ -44,22 +44,17 @@ export default function Projects() {
       }, []);  
       
     
-    const [hoveredIndex, setHoveredIndex] = useState(null);
   
-    const handleCardHover = (index) => {
-      setHoveredIndex(index);
-    };
-
  
     return (
         <div className='project-container' >
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`project-card ${index === hoveredIndex ? 'hovered' : ''}`}
-              onMouseEnter={() => handleCardHover(index)}
-              onMouseLeave={() => handleCardHover(null)}
+              className="project-card" data-aos="fade-up"
+           
             >
+                
                 <div className='project-ss'>
                     <img className='project-ss' src={project.img} alt='screenshot' />
                 </div>
