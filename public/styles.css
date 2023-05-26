@@ -116,7 +116,7 @@ h1 {
     height: auto;
     width: auto;
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
     border-image-slice: 1;
@@ -126,7 +126,7 @@ h1 {
     height: auto;
     width: auto;
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
     border-image-slice: 1;
@@ -137,7 +137,7 @@ h1 {
     height: 150px;
     width: auto;
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
     border-image-slice: 1;

@@ -21,19 +21,19 @@ const AddSkills = ['Version Control(Git/GitHub)', 'MVC Framework', 'Web Design',
 
 const Education = [
   {
-    degree: 'Bachelor of Science in Computer Science',
+    degree: 'Ontario College Advanced Diploma, Computer Programmer Analyst',
     institution: 'George Brown College',
-    year: 'April 2017',
+    year: 'Sep 2015 - Apr 2017',
   },
   {
     degree: 'Software Engineering Certificate' ,
     institution: 'General Assembly',
-    year: 'May 2023',
+    year: 'Mar 2023 - May 2023',
   },
   {
-    degree: 'Home Renovation Construction Technology Certificate' ,
+    degree: 'Home Construction Technology Certificate' ,
     institution: 'York Construction Academy',
-    year: 'March 2021',
+    year: 'Dec 2020 - Apr 2021',
   },
  
 ]
@@ -43,18 +43,18 @@ const WorkHistory = [
       position: 'Customer Care Technician',
       company: 'Madison Group',
       location: 'Toronto, ON',
-      duration: '03/2022 to 03/2023',
+      duration: 'Mar 2022 - Mar 2023',
       responsibilities: [
-         'I consistently exceed customer expectations by completing work orders and service calls as a company representative. I excel in inspections, diagnosis, and repair, including tasks like drywall repair, painting, minor plumbing, and more. I communicate professionally with supervisors, co-workers, clients, and trades, while documenting service notes and providing timely updates for all work orders.',
+         'Completing work orders and service calls as a company representative. I excel in inspections, diagnosis, and repair, including tasks like drywall repair, painting, minor plumbing, and more. I communicate professionally with supervisors, co-workers, clients, and trades, while documenting service notes and providing timely updates for all work orders.',
       ],
     },
     {
       position: 'Junior Carpenter',
       company: 'R-MAC Solutions Inc.',
       location: 'Toronto, ON',
-      duration: '10/2021 to 03/2022',
+      duration: 'Oct 2021 - Mar 2022',
       responsibilities: [
-        'I efficiently utilized power tools, hand tools, and auxiliary instruments to meet project deadlines. I assessed material requirements, estimated production costs, and prioritized tasks to prevent delays. I conducted thorough inspections of job sites pre and post-project completion to ensure adherence to standards. I consistently researched and complied with building codes and safety regulations. By addressing client needs and resolving concerns promptly, I ensured overall client satisfaction on every project.',
+        'Efficiently utilized power tools, hand tools, and auxiliary instruments to meet project deadlines. I assessed material requirements, estimated production costs, and prioritized tasks to prevent delays. I conducted thorough inspections of job sites pre and post-project completion to ensure adherence to standards. I consistently researched and complied with building codes and safety regulations. By addressing client needs and resolving concerns promptly, I ensured overall client satisfaction on every project.',
       ],
     },
 
@@ -130,10 +130,11 @@ const WorkHistory = [
           
           {Education.map((edu, index) => (
             <div key={index} className='education' data-aos="fade-right">
+              <p>{edu.year}</p>
               <h3>Education</h3>
               <h4>{edu.degree}</h4>
-              <p>{edu.institution}</p>
-              <p>{edu.year}</p>
+              <h4>{edu.institution}</h4>
+              
             </div>
           ))}
         </section>
@@ -142,12 +143,11 @@ const WorkHistory = [
           
           {WorkHistory.map((job, index) => (
             <div key={index} className='experience' data-aos="fade-left">
+              <p>{job.duration}</p>
               <h3>Work History</h3>
               <h4>{job.position}</h4>
-              <p>
-                {job.company} - {job.location}
-              </p>
-              <p>{job.duration}</p>
+              <h4>{job.company} - {job.location}</h4>
+              
               <p className='resp'>{job.responsibilities}</p>
             </div>
           ))}
