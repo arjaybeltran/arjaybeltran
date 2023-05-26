@@ -92,20 +92,7 @@ h1 {
     margin-right: 20px;
   }
 
-  .navbar li::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #333;
-    transition: width 0.2s ease;
-  }
 
-  .navbar li:hover::after {
-    width: 40%;
-  }
 
 
 /* ------------------------- */
@@ -185,7 +172,7 @@ h1 {
 
 
 .project-card:hover {
-    background-color: #333;
+    background-color: #444;
     color: beige;
     cursor: pointer;
 }
@@ -288,4 +275,24 @@ footer {
 .education:hover, .experience:hover {
   background-color: #333;
   cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+  border: solid 2px #333;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+a:hover {
+  background-color:#555;
+  cursor: var(--color1);
+}
+
+.project-name {
+  font-weight:bolder;
+  font-size: 20px;
 }

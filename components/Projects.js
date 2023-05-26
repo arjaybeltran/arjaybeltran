@@ -57,14 +57,12 @@ export default function Projects() {
               key={index}
               className="project-card" data-aos="fade-up"
               data-aos-anchor-placement="center-center"
-           
-            >
-                
+            > 
                 <div className='project-ss'>
                     <img className='project-ss' src={project.img} alt='screenshot' />
                 </div>
                 <div className='project-text'>
-                    <h3>{project.name}</h3>
+                    <h3 className='project-name'>{project.name}</h3>
                     <p>{project.description}</p>
                     <a href={project.liveSite} target="_blank" rel="noopener noreferrer">
                         Visit Live Site
