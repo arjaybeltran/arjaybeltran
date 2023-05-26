@@ -15,7 +15,8 @@ export default function Navbar() {
       <nav className='navbar'>
         <ul>
           <li>
-            <ScrollLink
+            <ScrollLink 
+              className='navlink'
               to='bio'
               spy={true}
               smooth={true}
@@ -27,6 +28,7 @@ export default function Navbar() {
           </li>
           <li>
             <ScrollLink
+              className='navlink'
               to='projects'
               spy={true}
               smooth={true}
@@ -38,6 +40,7 @@ export default function Navbar() {
           </li>
           <li>
             <ScrollLink
+              className='navlink'
               to='resume'
               spy={true}
               smooth={true}

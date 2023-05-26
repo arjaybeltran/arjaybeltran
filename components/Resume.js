@@ -130,7 +130,7 @@ const WorkHistory = [
           
           {Education.map((edu, index) => (
             <div key={index} className='education' data-aos="fade-right">
-              <p>{edu.year}</p>
+              <h4 className='date'>{edu.year}</h4>
               <h3>Education</h3>
               <h4>{edu.degree}</h4>
               <h4>{edu.institution}</h4>
@@ -143,7 +143,7 @@ const WorkHistory = [
           
           {WorkHistory.map((job, index) => (
             <div key={index} className='experience' data-aos="fade-left">
-              <p>{job.duration}</p>
+              <h4 className='date'>{job.duration}</h4>
               <h3>Work History</h3>
               <h4>{job.position}</h4>
               <h4>{job.company} - {job.location}</h4>

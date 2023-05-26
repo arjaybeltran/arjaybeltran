@@ -64,7 +64,7 @@ export default function Projects() {
                 <div className='project-text'>
                     <h3 className='project-name'>{project.name}</h3>
                     <p>{project.description}</p>
-                    <a href={project.liveSite} target="_blank" rel="noopener noreferrer">
+                    <a className='livesite' href={project.liveSite} target="_blank" rel="noopener noreferrer">
                         Visit Live Site
                     </a>
                     <div className='tech-stack'>

@@ -45,7 +45,7 @@ nav ul li:hover {
     margin: 150px 20px 20px 20px;
     font-size: 50px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
 }
 
 #bio {
@@ -278,7 +278,7 @@ footer {
 }
 
 
-a {
+.livesite, .navlink {
   text-decoration: none;
   font-weight: bold;
   color: whitesmoke;
@@ -287,7 +287,7 @@ a {
   padding: 5px;
 }
 
-a:hover {
+.livesite:hover, .navlink:hover {
   background-color:#555;
   cursor: var(--color1);
 }
@@ -295,4 +295,14 @@ a:hover {
 .project-name {
   font-weight:bolder;
   font-size: 20px;
+}
+
+.date {
+  color: #777;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-photo {
+  border: solid 3px #444;
 }
