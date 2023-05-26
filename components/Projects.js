@@ -14,25 +14,29 @@ const projects = [
         name: 'HELLO WORLD',
         description: 'Search a country and find basic information about it',
         liveSite: 'https://hello-world-rose-sigma.vercel.app/',
-        img: '/images/helloworld.png'
+        img: '/images/helloworld.png',
+        technologies: ['JavaScript', 'HTML', 'CSS', 'AJAX'],
     } ,
     {
         name: 'docket',
         description: 'To do list',
         liveSite: 'https://docket-project-two.herokuapp.com/',
-        img: '/images/docket.png'
+        img: '/images/docket.png',
+        technologies: ['JavaScript', 'HTML', 'CSS', 'Express.js', ],
     } ,
     {
         name: 'Choruso',
         description: 'Music Application - [Group Project] ',
         liveSite: 'https://choruso.herokuapp.com/',
-        img: '/images/choruso.png'
+        img: '/images/choruso.png',
+        technologies: ['Python', 'Django', 'Postgres'],
     } ,
     {
         name: 'Trackly',
         description: 'Job Application Tracker',
         liveSite: 'https://legendary-halva-8abb3f.netlify.app/',
-        img: '/images/trackly.png'
+        img: '/images/trackly.png',
+        technologies: ['React', 'Node.js', 'MongoDB', 'CSS', 'HTML'],
     } ,
 
 ]
@@ -65,6 +69,13 @@ export default function Projects() {
                     <a href={project.liveSite} target="_blank" rel="noopener noreferrer">
                         Visit Live Site
                     </a>
+                    <div className='tech-stack'>
+                    <ul className="tech-list">
+                            {project.technologies.map((technology, index) => (
+                            <li key={index}>{technology}</li>
+                        ))}
+                    </ul>
+                    </div>
                 </div>
             </div>
           ))}

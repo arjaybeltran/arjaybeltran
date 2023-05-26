@@ -21,11 +21,6 @@ const AddSkills = ['Version Control(Git/GitHub)', 'MVC Framework', 'Web Design',
 
 const Education = [
   {
-    degree: 'Ontario College Advanced Diploma, Computer Programmer Analyst',
-    institution: 'George Brown College',
-    year: 'Sep 2015 - Apr 2017',
-  },
-  {
     degree: 'Software Engineering Certificate' ,
     institution: 'General Assembly',
     year: 'Mar 2023 - May 2023',
@@ -35,7 +30,12 @@ const Education = [
     institution: 'York Construction Academy',
     year: 'Dec 2020 - Apr 2021',
   },
- 
+  {
+    degree: 'Ontario College Advanced Diploma, Computer Programmer Analyst',
+    institution: 'George Brown College',
+    year: 'Sep 2015 - Apr 2017',
+  },
+  
 ]
 
 const WorkHistory = [
