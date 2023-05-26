@@ -16,12 +16,12 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/arjaybeltran" target="_blank" rel="noopener noreferrer">
+          <a href="#" target="_blank" rel="noopener noreferrer">
             <FaFacebook className="footer-icon" size={25} />
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/arjaybeltran" target="_blank" rel="noopener noreferrer">
+          <a href="#" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="footer-icon" size={25} />
           </a>
         </li>

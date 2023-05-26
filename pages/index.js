@@ -11,6 +11,7 @@ export default function Home() {
     <div className='index'>
       <Head>
         <title>Arjay Beltran</title>
+        <link rel="icon" href="/images/ab1.png" />
       </Head>
       <Layout>
         <div className='container'>
