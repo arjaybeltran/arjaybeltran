@@ -24,9 +24,13 @@ body {
     z-index: 100;
     position: fixed;
     top: 100px; 
-    left: 100px; 
+    left: 80px; 
     margin-top: 50px;
   }
+
+.left-el.open {
+  left: 0;
+}
 
 nav ul {
     list-style: none;
@@ -88,7 +92,7 @@ h1 {
   }
 
   .navbar li {
-    position: relative;
+    position:static;
     margin-right: 20px;
   }
 
@@ -306,3 +310,4 @@ footer {
 .profile-photo {
   border: solid 3px #444;
 }
+
