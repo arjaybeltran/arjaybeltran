@@ -57,7 +57,16 @@ const WorkHistory = [
         'Efficiently utilized power tools, hand tools, and auxiliary instruments to meet project deadlines. I assessed material requirements, estimated production costs, and prioritized tasks to prevent delays. I conducted thorough inspections of job sites pre and post-project completion to ensure adherence to standards. I consistently researched and complied with building codes and safety regulations. By addressing client needs and resolving concerns promptly, I ensured overall client satisfaction on every project.',
       ],
     },
-
+    {
+      position: 'Assistant Manager',
+      company: 'UNIQLO',
+      location: 'Toronto, ON',
+      duration: 'Aug 2017 - July 2020',
+      responsibilities: 
+      [ 
+        'Successfully achieving 100% target daily store sales, strategic planning and sales management were implemented. Store operations, including point-of-sale systems, inventory control, and coordination with branches and the warehouse, were overseen. Work safety and customer concerns were managed, emphasizing exceptional customer service. Additionally, daily meetings were conducted to align with goals, present product knowledge, and coordinate store activities.'
+      ]
+    },
   ]
 
   export default function Resume() {
