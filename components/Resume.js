@@ -10,7 +10,7 @@ const ContactInfo = {
 
 const Websites = [
 
-  { name: 'Portfolio', url: '/' }, //    change to deploy url
+  { name: 'Portfolio', url: 'https://arjaybeltran.vercel.app/' }, //    change to deploy url
   { name: 'GitHub', url: 'https://github.com/Arjybltrn' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/arjaybeltran/' },
 ];
