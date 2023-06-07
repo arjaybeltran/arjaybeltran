@@ -38,6 +38,13 @@ const projects = [
         img: '/images/trackly.png',
         technologies: ['React', 'Node.js', 'MongoDB', 'Express.js'],
     } ,
+    {
+        name: 'flowerbox.',
+        description: 'Your online destination for exquisite floral arrangements and fresh blooms. Discover beauty, elegance, and joy in every petal.',
+        liveSite: 'https://flowerbox.vercel.app/',
+        img: '/images/flowerbox.png',
+        technologies: ['React', 'Node.js', 'CSS'],
+    } ,
 
 ]
 
