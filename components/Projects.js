@@ -4,11 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-  
-
-
- 
-
 const projects = [
     {
         name: '// HLLO WRLD',
@@ -58,7 +53,7 @@ export default function Projects() {
   
  
     return (
-        <div className='project-container' >
+        <div id="project-container" className='project-container' >
           {projects.map((project, index) => (
             <div
               key={index}

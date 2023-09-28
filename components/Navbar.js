@@ -2,6 +2,7 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
+  const leftElHeight= 500;
   return (
     <div className='left-el'>
     
@@ -20,7 +21,7 @@ export default function Navbar() {
               to='bio'
               spy={true}
               smooth={true}
-              offset={-150} // Adjust the offset value according to your margin
+              offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
               // bio.
@@ -32,7 +33,7 @@ export default function Navbar() {
               to='projects'
               spy={true}
               smooth={true}
-              offset={-150} // Adjust the offset value according to your margin
+              offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
               // projects.
@@ -44,7 +45,7 @@ export default function Navbar() {
               to='resume'
               spy={true}
               smooth={true}
-              offset={-150} // Adjust the offset value according to your margin
+              offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
               // experience.

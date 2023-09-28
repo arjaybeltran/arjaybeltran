@@ -1,7 +1,18 @@
+:root {
+  --primary-color: #ffa15e; /* Moonrise Kingdom orange */
+  --secondary-color: #5a9b88; /* Moonrise Kingdom green */
+  --background-color: #f4e4cd; /* Creamy background */
+  --blue-color: rgb(35,33,59);
+  --red-color: rgb(210,50,38);
+  --blue2-color: rgb(91,93,124);
+  --nav-footer-height: 80px; /* Common height for nav and footer */
+}
+
+
 html {
     scroll-behavior: smooth;
-    background-color: #222;
-    color: whitesmoke;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -24,7 +35,7 @@ body {
     z-index: 100;
     position: fixed;
     top: 100px; 
-    left: 80px; 
+    left: 50px; 
     margin-top: 50px;
   }
 
@@ -37,8 +48,12 @@ nav ul {
     cursor: pointer;
 }
 
+nav ul li {
+  color:var(--primary-color)
+}
+
 nav ul li:hover {
-    color: #555;
+    color: var(--blue2-color);
 }
   
 .main {
@@ -109,9 +124,8 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
-    border-image-slice: 1;
-    border-radius: 15px;
+    border-radius: 20px;
+    
 }
 .experience {
     margin: 35px 20px 50px 20px;
@@ -120,9 +134,7 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
-    border-image-slice: 1;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .project-card {
@@ -132,8 +144,8 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-image: conic-gradient(from 30deg, #0076a5, #6be89b) 1;
-    border-image-slice: 1;
+    border-radius: 20px;
+    
 }
 .project-text {
   padding-right: 10px;
@@ -160,8 +172,8 @@ h1 {
 
   .project-card {
     --border: 2px;
-    --color1: #6be89b;
-    --color2: #0076a5;
+    --color1: var(--primary-color)
+    --color2: var(--secondary-color)
     --from: 30deg;
     --distance: 46%;
   }
@@ -176,7 +188,7 @@ h1 {
 
 
 .project-card:hover {
-    background-color: #444;
+    background-color: var(--secondary-color);
     color: beige;
     cursor: pointer;
 }
@@ -205,7 +217,7 @@ footer {
   }
 
   .footer-icon {
-    color:whitesmoke;
+    color:var(--secondary-color);
   }
 
   .footer-icon:hover {
@@ -216,7 +228,7 @@ footer {
 
 
 /* profile half moon border */
-.profile {
+/* .profile {
   --border: 3px;
   --color1: #6be89b;
   --color2: #0076a5;
@@ -257,7 +269,7 @@ footer {
 .profile-photo {
   border-radius: 999px;
   display: block;
-}
+} */
 
 /* -------------- */
 
@@ -285,14 +297,14 @@ footer {
 .livesite, .navlink {
   text-decoration: none;
   font-weight: bold;
-  color: whitesmoke;
-  border: solid 2px #333;
+  color: var(--secondary-color);
+  border: solid 2px var(--primary-color);
   border-radius: 10px;
   padding: 5px;
 }
 
 .livesite:hover, .navlink:hover {
-  background-color:#555;
+  background-color:var(--blue-color);
   cursor: var(--color1);
 }
 
@@ -310,4 +322,69 @@ footer {
 .profile-photo {
   border: solid 3px #444;
 }
+
+
+/* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  body {
+    display: block; /* Change from grid to block for mobile layout */
+    margin: 0; /* Remove margin for mobile layout */
+    padding-bottom: 80px; /* Add padding at the bottom to accommodate the fixed footer */
+  }
+
+  .index {
+    margin: 35px auto; /* Center the content horizontally */
+    max-width: 400px; /* Set a maximum width for content on mobile */
+  }
+
+  .left-el {
+    width: 80%; /* Set a width percentage for centering */
+    padding: 10px;
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Stick to the top */
+    transform: translateX(-20%); /* Center it precisely */
+  }
+
+  .layout {
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+  }
+
+  .experience,
+  .education,
+  .project-card {
+    width: 100%; /* Make cards full width on mobile */
+    margin: 0; /* Remove margins for cards */
+    padding: 20px; /* Add padding to separate cards */
+    box-sizing: border-box; /* Include padding in card width */
+    margin-left: 100px;
+  }
+
+
+
+  /* Add fixed styling for the footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Center text horizontally */
+    padding: 20px 0; /* Add vertical padding to center vertically */
+    background-color: var(--background-color);
+  }
+
+
+
+  #bio {
+    margin-top: 490px;
+    margin-left: 220px; /* Add margin to push it below the .left-el */
+  }
+
+  .title {
+    margin-left: 220px;
+  }
+
+
+}
+
+
 
