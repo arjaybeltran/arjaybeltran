@@ -325,7 +325,7 @@ footer {
 
 
 /* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
-@media (max-width: 768px) {
+@media (max-width: 844px) {
   body {
     display: block; /* Change from grid to block for mobile layout */
     margin: 0; /* Remove margin for mobile layout */
@@ -375,6 +375,7 @@ footer {
 
 
   #bio {
+    font-size: 25px;
     margin-top: 490px;
     margin-left: 220px; /* Add margin to push it below the .left-el */
   }
