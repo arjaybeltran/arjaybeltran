@@ -5,15 +5,32 @@
   --blue-color: rgb(35,33,59);
   --red-color: rgb(210,50,38);
   --blue2-color: rgb(91,93,124);
-  --nav-footer-height: 80px; /* Common height for nav and footer */
 }
 
+:root {
+  --primary-font: 'Croissant One', cursive;
+  --secondary-font: 'Nanum Pen Script', cursive;
+}
 
 html {
     scroll-behavior: smooth;
     background-color: var(--background-color);
     color: var(--secondary-color);
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.left-el h1 {
+  font-family: 'Croissant One', cursive;
+  font-size: 80px;
+  text-shadow:
+  -1px -1px 0 var(--blue-color),
+  1px -1px 0 var(--blue-color),
+  -1px 1px 0 var(--blue-color),
+  1px 1px 0 var(--blue-color);
+}
+
+.bio-text {
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 body {
@@ -53,7 +70,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: var(--blue2-color);
+    color: var(--secondary-color);
 }
   
 .main {
@@ -65,7 +82,13 @@ nav ul li:hover {
     font-size: 50px;
     text-align: center;
     letter-spacing: 8px;
-}
+    font-family: var(--primary-font);
+    text-shadow:
+    -1px -1px 0 var(--blue-color),
+    1px -1px 0 var(--blue-color),
+    -1px 1px 0 var(--blue-color),
+    1px 1px 0 var(--blue-color);
+  }
 
 #bio {
     margin: 100px 20px 50px 20px;
@@ -74,7 +97,15 @@ nav ul li:hover {
 }
 
 .bio-text{
-    letter-spacing: 1px;
+    letter-spacing: 4px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 var(--blue-color),
+    1px -1px 0 var(--blue-color),
+    -1px 1px 0 var(--blue-color),
+    1px 1px 0 var(--blue-color);
 }
 h1 {
     letter-spacing: 4px;
@@ -93,10 +124,11 @@ h1 {
 /* navbar css */
 
 .navbar ul li {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 36px;
     font-weight: 1000;
+    font-family: var(--secondary-font);
 }
 
 
@@ -159,10 +191,14 @@ h1 {
 
 .tech-list li {
   margin-right: 15px;
-  border: 2px solid #333;
+  border: 2px solid var(--secondary-color);
   border-radius: 10px;
   padding: 5px;
 
+}
+
+.tech-list li:hover {
+  border: 2px solid var(--primary-color)
 }
 
 .tech-list li:last-child {
@@ -188,8 +224,8 @@ h1 {
 
 
 .project-card:hover {
-    background-color: var(--secondary-color);
-    color: beige;
+    background-color: var(--blue-color);
+    color: var(--background-color);
     cursor: pointer;
 }
 
@@ -221,7 +257,7 @@ footer {
   }
 
   .footer-icon:hover {
-    color:black;
+    color:var(--primary-color);
   }
 
 /* ------------------------ */
@@ -289,8 +325,9 @@ footer {
 /* -------------- */
 
 .education:hover, .experience:hover {
-  background-color: #333;
   cursor: pointer;
+  background-color: var(--blue-color);
+  color: var(--background-color);
 }
 
 
@@ -298,14 +335,17 @@ footer {
   text-decoration: none;
   font-weight: bold;
   color: var(--secondary-color);
-  border: solid 2px var(--primary-color);
-  border-radius: 10px;
   padding: 5px;
 }
 
-.livesite:hover, .navlink:hover {
-  background-color:var(--blue-color);
+ .navlink:hover {
   cursor: var(--color1);
+  color: var(--primary-color)
+}
+
+.livesite:hover {
+  border: solid 2px var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .project-name {
@@ -322,6 +362,11 @@ footer {
 .profile-photo {
   border: solid 3px #444;
 }
+
+
+
+
+
 
 
 /* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
@@ -383,9 +428,10 @@ footer {
   .title {
     margin-left: 220px;
   }
-
-
 }
+
+
+
 
 
 

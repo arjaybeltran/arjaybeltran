@@ -36,7 +36,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              // projects.
+               projects. //
             </ScrollLink>
           </li>
           <li>
