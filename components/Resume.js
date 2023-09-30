@@ -79,61 +79,6 @@ const WorkHistory = [
 
       <div>
   
-        {/* <section>
-          <h3>Contact</h3>
-          <p>
-            <strong>Name:</strong> {ContactInfo.name}
-          </p>
-          <p>
-            <strong>Email:</strong> {ContactInfo.email}
-          </p>
-          <p>
-            <strong>Phone:</strong> {ContactInfo.phone}
-          </p>
-        </section>
-  
-        <section>
-          <h3>Websites</h3>
-          <ul>
-            {Websites.map((website, index) => (
-              <li key={index}>
-                <a href={website.url} target="_blank" rel="noopener noreferrer">
-                  {website.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-  
-        <section>
-          <h3>Skills</h3>
-          <div>
-            <h4>Frontend</h4>
-            <ul>
-              {FrontendSkills.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-  
-          <div>
-            <h4>Backend</h4>
-            <ul>
-              {BackendSkills.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4>Additional Skills</h4>
-            <ul>
-              {AddSkills.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-        </section> */}
   
         <section>
           
