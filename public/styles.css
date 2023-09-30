@@ -390,6 +390,21 @@ footer {
     transform: translateX(-20%); /* Center it precisely */
   }
 
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    
+  }
+
+  .navlink {
+    letter-spacing: 1px;
+
+  }
+
+
+
+
   .layout {
     grid-template-columns: 1fr; /* Single column for mobile layout */
   }

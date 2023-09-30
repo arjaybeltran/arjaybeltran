@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
-  const leftElHeight= 500;
+  const leftElHeight= 550;
   return (
     <div className='left-el'>
     
