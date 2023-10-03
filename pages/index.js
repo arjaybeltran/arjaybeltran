@@ -9,32 +9,32 @@ import UnderConstruction from '../components/UnderConstruction';
 
 export default function Home() {
   return (
-    <UnderConstruction />
-    // <div className='index'>
-    //   <Head>
-    //     <title>Arjay Beltran</title>
-    //     <link rel="icon" href="/images/ab1.png" />
-    //   </Head>
-    //   <Layout>
-    //     <div className='container'>
-    //       {/* bio */}
-    //       <section id='bio' className='section'>
-    //         <Bio />
-    //       </section>
+   
+    <div className='index'>
+      <Head>
+        <title>Arjay Beltran</title>
+        <link rel="icon" href="/images/ab1.png" />
+      </Head>
+      <Layout>
+        <div className='container'>
+          {/* bio */}
+          <section id='bio' className='section'>
+            <Bio />
+          </section>
 
-    //       {/* projects */}
-    //       <section id='projects' className='section'>
-    //         <h2 className='title'>projects</h2>
-    //         <Projects />
-    //       </section>
+          {/* projects */}
+          <section id='projects' className='section'>
+            <h2 className='title'>projects</h2>
+            <Projects />
+          </section>
 
-    //       {/* resume */}
-    //       <section id='resume' className='section'>
-    //         <h2 className='title'>experience</h2>
-    //         <Resume />
-    //       </section>
-    //     </div>
-    //   </Layout>
-    // </div>
+          {/* resume */}
+          <section id='resume' className='section'>
+            <h2 className='title'>experience</h2>
+            <Resume />
+          </section>
+        </div>
+      </Layout>
+    </div>
   )
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Croissant+One&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');
 :root {
   --primary-color: #ffa15e; /* Moonrise Kingdom orange */
   --secondary-color: #5a9b88; /* Moonrise Kingdom green */
@@ -162,7 +163,7 @@ h1 {
 .experience {
     margin: 35px 20px 50px 20px;
     height: auto;
-    width: auto;
+    width: 100%;
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
@@ -174,7 +175,7 @@ h1 {
     height: auto;
     width: auto;
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-radius: 20px;
     
@@ -207,19 +208,20 @@ h1 {
 
 
   .project-card {
-    --border: 2px;
+
     --color1: var(--primary-color)
     --color2: var(--secondary-color)
-    --from: 30deg;
-    --distance: 46%;
+  
+    
   }
 
 
 .project-ss {
-    height: 70px;
-    width: 100px;
-    margin: 0 auto;
-    padding-top: 20px;
+    height: 80px;
+    width: 130px;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 20px;
 }
 
 
@@ -338,18 +340,34 @@ footer {
   padding: 5px;
 }
 
+.chevronRight {
+  font-size: 20px;
+  margin-left: 350px;
+  margin-top: -5px;
+}
+
+.chevronRight:hover {
+  color: white;
+}
+
  .navlink:hover {
   cursor: var(--color1);
   color: var(--primary-color)
 }
 
 .livesite:hover {
-  border: solid 2px var(--secondary-color);
   color: var(--primary-color);
 }
 
 .project-name {
-  font-weight:bolder;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
+.description {
+  margin-right: 10px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
   font-size: 20px;
 }
 
