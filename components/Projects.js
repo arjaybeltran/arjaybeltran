@@ -1,7 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import { PiArrowSquareOutFill } from 'react-icons/pi'
+import { RiJavascriptFill } from 'react-icons/ri'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { FaCss3Alt } from 'react-icons/fa'
+import { SiExpress, SiPython, SiDjango, SiPostgresql, SiReact, SiMongodb} from 'react-icons/si'
+import { DiDjango } from 'react-icons/di'
+import { LiaNode } from 'react-icons/lia'
+import { TbApi } from 'react-icons/tb'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+const technologyIcons = {
+    JavaScript: RiJavascriptFill,
+    HTML: AiFillHtml5,
+    CSS: FaCss3Alt,
+    Express: SiExpress,
+    Python: SiPython,
+    Django: SiDjango,
+    Postgres: SiPostgresql,
+    React: SiReact,
+    Node: LiaNode,
+    MongoDB: SiMongodb,
+    API: TbApi
+}
+
 
 
 const projects = [
@@ -10,14 +32,14 @@ const projects = [
         description: 'Discover basic information about any country by searching for it. Explore details such as population, languages spoken, currency, and more.',
         liveSite: 'https://hello-world-rose-sigma.vercel.app/',
         img: '/images/helloworld.png',
-        technologies: ['JavaScript', 'HTML', 'CSS', 'AJAX'],
+        technologies: ['JavaScript', 'HTML', 'CSS', 'API'],
     } ,
     {
         name: 'docket.',
         description: 'Stay organized with a simple and intuitive to-do list application. Keep track of your tasks, set reminders, and easily manage your daily agenda.',
         liveSite: 'https://docket-project-two.herokuapp.com/',
         img: '/images/docket.png',
-        technologies: ['JavaScript', 'HTML', 'CSS', 'Express.js', ],
+        technologies: ['JavaScript', 'HTML', 'CSS', 'Express', ],
     } ,
     {
         name: 'Choruso',
@@ -31,14 +53,14 @@ const projects = [
         description: 'Simplify your job application process with Trackly, a comprehensive job application tracker. Keep tabs on your applications, track progress, and stay organized in your job search.',
         liveSite: 'https://legendary-halva-8abb3f.netlify.app/',
         img: '/images/trackly.png',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Express.js'],
+        technologies: ['MongoDB', 'Express','React', 'Node'],
     } ,
     {
         name: 'flowerbox.',
         description: 'Your online destination for exquisite floral arrangements and fresh blooms. Discover beauty, elegance, and joy in every petal.',
         liveSite: 'https://flowerbox.vercel.app/',
         img: '/images/flowerbox.png',
-        technologies: ['React', 'Node.js', 'CSS'],
+        technologies: ['React', 'Node', 'CSS'],
     } ,
 
 ]
@@ -57,8 +79,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card" data-aos="fade-up"
-              data-aos-anchor-placement="center-center"
+              className="project-card" 
             > 
             
 
@@ -75,9 +96,15 @@ export default function Projects() {
                     <p className='description'>{project.description}</p>
                     <div className='tech-stack'>
                     <ul className="tech-list">
-                            {project.technologies.map((technology, index) => (
-                            <li key={index}>{technology}</li>
-                        ))}
+                        {project.technologies.map((tech, techIndex) => {
+                            const IconComponent = technologyIcons[tech];
+                            if (!IconComponent) {
+                            return null; // Handle the case where the technology doesn't have an icon
+                        }
+                            return <p className='tech-icon'>
+                                    <IconComponent key={techIndex} size={30}  />
+                                   </p>;
+                    })}
                     </ul>
                     </div> 
                     </a> 

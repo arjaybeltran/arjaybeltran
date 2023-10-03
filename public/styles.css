@@ -31,7 +31,7 @@ html {
 }
 
 .bio-text {
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
 body {
@@ -99,7 +99,6 @@ nav ul li:hover {
 
 .bio-text{
     letter-spacing: 4px;
-    font-family: 'Nanum Pen Script', cursive;
     font-size: 40px;
     font-weight: bold;
     text-shadow:
@@ -190,7 +189,7 @@ h1 {
   
 }
 
-.tech-list li {
+.tech-list ul {
   margin-right: 15px;
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
@@ -198,6 +197,9 @@ h1 {
 
 }
 
+.tech-icon { 
+  margin-right: 10px;
+}
 .tech-list li:hover {
   border: 2px solid var(--primary-color)
 }
