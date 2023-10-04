@@ -33,7 +33,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              <CgBoy /> bio.
+            <CgBoy className='nav-icon'  /> bio. 
             </ScrollLink>
           </li>
           <li>
@@ -45,7 +45,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              <RiAppsLine /> projects. 
+              <RiAppsLine className='nav-icon' /> projects. 
             </ScrollLink>
           </li>
           <li>
@@ -57,7 +57,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              <HiOutlineLightBulb/> experience.
+              <HiOutlineLightBulb className='nav-icon'/> experience.
             </ScrollLink>
           </li>
         </ul>

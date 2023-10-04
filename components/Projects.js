@@ -26,8 +26,10 @@ const technologyIcons = {
 
 
 
+
 const projects = [
     {
+        id: 1,
         name: '// HLL0 WRLD',
         description: 'Discover basic information about any country by searching for it. Explore details such as population, languages spoken, currency, and more.',
         liveSite: 'https://hello-world-rose-sigma.vercel.app/',
@@ -35,6 +37,7 @@ const projects = [
         technologies: ['JavaScript', 'HTML', 'CSS', 'API'],
     } ,
     {
+        id: 2,
         name: 'docket.',
         description: 'Stay organized with a simple and intuitive to-do list application. Keep track of your tasks, set reminders, and easily manage your daily agenda.',
         liveSite: 'https://docket-project-two.herokuapp.com/',
@@ -42,6 +45,7 @@ const projects = [
         technologies: ['JavaScript', 'HTML', 'CSS', 'Express', ],
     } ,
     {
+        id: 3,
         name: 'Choruso',
         description: 'Immerse yourself in the world of music with Choruso, a collaborative music application. Discover, listen to, and share your favorite songs and playlists with friends.',
         liveSite: 'https://choruso.herokuapp.com/',
@@ -49,6 +53,7 @@ const projects = [
         technologies: ['Python', 'Django', 'Postgres'],
     } ,
     {
+        id: 4,
         name: 'Trackly',
         description: 'Simplify your job application process with Trackly, a comprehensive job application tracker. Keep tabs on your applications, track progress, and stay organized in your job search.',
         liveSite: 'https://legendary-halva-8abb3f.netlify.app/',
@@ -56,6 +61,7 @@ const projects = [
         technologies: ['MongoDB', 'Express','React', 'Node'],
     } ,
     {
+        id: 5,
         name: 'flowerbox.',
         description: 'Your online destination for exquisite floral arrangements and fresh blooms. Discover beauty, elegance, and joy in every petal.',
         liveSite: 'https://flowerbox.vercel.app/',
@@ -72,11 +78,19 @@ export default function Projects() {
       }, []);  
       
     
-  
  
     return (
+
+        
+
         <div id="project-container" className='project-container' >
           {projects.map((project, index) => (
+
+
+
+
+
+
             <div
               key={index}
               className="project-card" 
@@ -112,7 +126,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
+    
+        
       );
   }
-
- 
