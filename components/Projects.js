@@ -80,14 +80,10 @@ export default function Projects() {
     
  
     return (
-
-        
-       
         <div id="project-container" className='project-container' >
-          {projects.map((project, index) => (
-
+          {projects.map((project) => (
             <div
-              key={index}
+              key={project.id}
               className="project-card" 
             > 
             
@@ -96,7 +92,7 @@ export default function Projects() {
                     <img className='project-ss' src={project.img} alt='screenshot' />
                 </div>
 
-                
+
                 <div className='project-text'>
                 <a className='livesite' href={project.liveSite} target="_blank" rel="noopener noreferrer">
 
@@ -104,25 +100,26 @@ export default function Projects() {
                     <h3 className='project-name'>{project.name} </h3>
                     <p className='description'>{project.description}</p>
                     <div className='tech-stack'>
+
+
                     <ul className="tech-list">
-                        {project.technologies.map((tech, techIndex) => {
-                            const IconComponent = technologyIcons[tech];
-                            if (!IconComponent) {
-                            return null; // Handle the case where the technology doesn't have an icon
-                        }
-                            return <p className='tech-icon'>
-                                    <IconComponent key={techIndex} size={30}  />
-                                   </p>;
-                    })}
-                    </ul>
+  {project.technologies.map((tech, techIndex) => {
+    const IconComponent = technologyIcons[tech];
+    if (!IconComponent) {
+      return null; // Handle the case where the technology doesn't have an icon
+    }
+    return (
+      <p className="tech-icon" key={techIndex}>
+        <IconComponent size={30} />
+      </p>
+    );
+  })}
+</ul>
                     </div> 
                     </a> 
                 </div>
             </div>
           ))}
         </div>
-      
-    
-        
       );
   }
