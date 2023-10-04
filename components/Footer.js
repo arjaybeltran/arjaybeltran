@@ -7,22 +7,22 @@ export default function Footer() {
       <ul>
         <li>
           <a href="https://github.com/Arjybltrn" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="footer-icon" size={25} />
+            <FaGithub className="footer-icon"  />
           </a>
         </li>
         <li>
           <a href="https://linkedin.com/in/arjaybeltran" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="footer-icon" size={25} />
+            <FaLinkedin className="footer-icon"  />
           </a>
         </li>
         <li>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="footer-icon" size={25} />
+            <FaFacebook className="footer-icon"  />
           </a>
         </li>
         <li>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="footer-icon" size={25} />
+            <FaInstagram className="footer-icon"   />
           </a>
         </li>
       </ul>

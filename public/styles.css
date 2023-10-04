@@ -93,7 +93,7 @@ nav ul li:hover {
 }
 
 .title {
-    margin: 150px 20px 20px 20px;
+    /* margin: 150px 20px 20px 20px; */
     font-size: 50px;
     text-align: center;
     letter-spacing: 8px;
@@ -101,9 +101,9 @@ nav ul li:hover {
   }
 
 #bio {
-    margin: 100px 20px 50px 20px;
     width: auto;
-    line-height: 1.75;
+    line-height: 1.25;
+    margin-bottom: 10px;
 }
 
 .bio-text{
@@ -246,8 +246,7 @@ h1 {
 footer {
     position: sticky;
     bottom: 0;
-    padding-bottom: 50px;
-    margin-left: 80px;
+    font-size: 35px;
   }
   
   footer ul {
@@ -275,51 +274,9 @@ footer {
 /* ------------------------ */
 
 
-/* profile half moon border */
-/* .profile {
-  --border: 3px;
-  --color1: #6be89b;
-  --color2: #0076a5;
-  --from: 30deg;
-  --distance: 46%;
-}
 
-.profile {
-  position: relative;
-  padding: 30px;
-}
-.profile::after {
-  content: '';
-  border-radius: 999px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: conic-gradient(
-    from var(--from),
-    var(--color1),
-    var(--color2) var(--distance),
-    transparent var(--distance)
-  );
-  -webkit-mask: radial-gradient(
-    farthest-side,
-    transparent calc(100% - var(--border)),
-    #fff calc(100% - var(--border) + 1px)
-  );
-  mask: radial-gradient(
-    farthest-side,
-    transparent calc(100% - var(--border)),
-    #fff calc(100% - var(--border) + 1px)
-  );
-}
-.profile-photo {
-  border-radius: 999px;
-  display: block;
-} */
 
-/* -------------- */
+
 
 
 /* work history */
@@ -395,7 +352,7 @@ footer {
 }
 
 .profile-photo {
-  border: solid 3px #444;
+  border: solid 3px var(--blue2-color);
 }
 
 
@@ -419,8 +376,9 @@ footer {
   }
 
   .profile-photo {
-    display: block;
-    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
   }
 
  .left-el {
@@ -429,10 +387,22 @@ footer {
   top: 0;
  }
 
+
  .profile {
   text-align: center;
+  display: flex;
+  padding-bottom: 5px;
  }
 
+ #projects, #resume {
+  padding-top: 50px;
+ }
+ .left-el h1 {
+  margin-right: 150px;
+  margin-left: 20px;
+  padding-top: 8px;
+  font-size: 35px;
+ }
   nav ul {
     display: flex;
     justify-content: center;
@@ -443,41 +413,62 @@ footer {
 
   }
 
+  .left-el .navbar {
+    margin: 0;
+  }
 
+  .word {
+    padding-top: 50px;
+  }
 
+ .projects {
+  margin-top: 120px;
+ }
 
   .layout {
     grid-template-columns: 1fr; /* Single column for mobile layout */
   }
 
+  .project-container {
+    padding-top: 10px;
+  }
   .experience,
   .education,
   .project-card {
     width: 100%; /* Make cards full width on mobile */
     margin: 0; /* Remove margins for cards */
-    padding: 20px; /* Add padding to separate cards */
+    padding: 50px; /* Add padding to separate cards */
     box-sizing: border-box; /* Include padding in card width */
     margin-left: 100px;
+    margin-top: 20px;
   }
 
+  h3.project-name {
+    font-size: 40px;
+  }
+  .description {
+    font-size: 25px;
+  }
 
 
   /* Add fixed styling for the footer */
   footer {
     position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center; /* Center text horizontally */
-    padding: 20px 0; /* Add vertical padding to center vertically */
     background-color: var(--background-color);
+    padding-left: 300px;
+  }
+
+  .footer-icon {
+    font-size: 50px; /* Increase the icon size for smaller screens */
   }
 
 
 
   #bio {
     font-size: 25px;
-    margin-top: 490px;
+    margin-top: 220px;
     margin-left: 220px; /* Add margin to push it below the .left-el */
   }
 
@@ -513,6 +504,7 @@ footer {
   font-size: 20px;
   font-family: var(--secondary-font);
 }
+
 
 
 

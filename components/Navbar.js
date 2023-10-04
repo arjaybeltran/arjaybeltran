@@ -1,39 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { CgBoy } from 'react-icons/cg'
-import { RiAppsLine } from 'react-icons/ri'
-import { HiOutlineLightBulb } from 'react-icons/hi'
-
-// const navIcons = {
-//   bio: SiAboutdotme,
-//   projects: GrProjects,
-//   experience: HiOutlineLightBulb
-// }
+import { CgBoy } from 'react-icons/cg';
+import { RiAppsLine } from 'react-icons/ri';
+import { HiOutlineLightBulb } from 'react-icons/hi';
 
 export default function Navbar() {
-  const leftElHeight= 150;
+  const [offset, setOffset] = useState(-150); // Default offset for larger screens
+
+  useEffect(() => {
+    // Update offset based on screen width
+    const updateOffset = () => {
+      if (window.innerWidth <= 844) {
+        setOffset(-200); // Adjust offset for smaller screens
+      } else {
+        setOffset(-120); // Default offset for larger screens
+      }
+    };
+
+    // Initial update
+    updateOffset();
+
+    // Listen for window resize events and update offset accordingly
+    window.addEventListener('resize', updateOffset);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('resize', updateOffset);
+    };
+  }, []);
+
   return (
     <div className='left-el'>
-    
-        <div className='profile'>
-            <img className="profile-photo" src="/images/pp.jpeg" alt="profile photo" />
+      <div className='profile'>
+        <img className="profile-photo" src="/images/pp.jpeg" alt="profile photo" />
         <h1>arjay beltran</h1>
-        </div>
+      </div>
 
-        
-      
       <nav className='navbar'>
         <ul>
           <li>
-            <ScrollLink 
+            <ScrollLink
               className='navlink'
               to='bio'
               spy={true}
               smooth={true}
-              offset={-leftElHeight} // Adjust the offset value according to your margin
+              offset={offset}
               duration={50}
             >
-            <CgBoy className='nav-icon'  /> bio. 
+              <CgBoy className='nav-icon' /> bio.
             </ScrollLink>
           </li>
           <li>
@@ -42,10 +56,10 @@ export default function Navbar() {
               to='projects'
               spy={true}
               smooth={true}
-              offset={-leftElHeight} // Adjust the offset value according to your margin
+              offset={offset}
               duration={50}
             >
-              <RiAppsLine className='nav-icon'  /> projects. 
+              <RiAppsLine className='nav-icon' /> projects.
             </ScrollLink>
           </li>
           <li>
@@ -54,10 +68,10 @@ export default function Navbar() {
               to='resume'
               spy={true}
               smooth={true}
-              offset={-leftElHeight} // Adjust the offset value according to your margin
+              offset={offset}
               duration={50}
             >
-              <HiOutlineLightBulb className='nav-icon'/> experience.
+              <HiOutlineLightBulb className='nav-icon' /> experience.
             </ScrollLink>
           </li>
         </ul>
