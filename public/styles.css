@@ -35,12 +35,14 @@ html {
 
 .left-el h1 {
   font-family: 'Croissant One', cursive;
-  font-size: 80px;
+  font-size: 70px;
   text-shadow:
   -1px -1px 0 var(--blue-color),
   1px -1px 0 var(--blue-color),
   -1px 1px 0 var(--blue-color),
   1px 1px 0 var(--blue-color);
+
+  text-wrap: wrap;
 }
 
 .bio-text {
@@ -60,14 +62,13 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 .left-el {
-    width: 400px;
     padding: 10px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     z-index: 100;
     position: fixed;
-    top: 100px; 
+    /* top: 100px; 
     left: 50px; 
-    margin-top: 50px;
+    margin-top: 50px; */
   }
 
 .left-el.open {
@@ -409,6 +410,7 @@ footer {
     display: block; /* Change from grid to block for mobile layout */
     margin: 0; /* Remove margin for mobile layout */
     padding-bottom: 80px; /* Add padding at the bottom to accommodate the fixed footer */
+    padding-top: 200px;
   }
 
   .index {
@@ -416,9 +418,19 @@ footer {
     max-width: 400px; /* Set a maximum width for content on mobile */
   }
 
+  .profile-photo {
+    display: block;
+    margin: 0 auto;
+  }
+
  .left-el {
-  position: fixed;
-  margin-left: 220px;
+  background-color: var(--background-color);
+  width: 100%;
+  top: 0;
+ }
+
+ .profile {
+  text-align: center;
  }
 
   nav ul {
