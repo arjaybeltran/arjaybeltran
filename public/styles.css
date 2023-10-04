@@ -356,7 +356,9 @@ footer {
 }
 
 
-
+.tech-icon {
+  font-size: 35px;
+}
 
 
 
@@ -403,6 +405,10 @@ footer {
   padding-top: 8px;
   font-size: 35px;
  }
+
+ .tech-icon {
+  font-size: 5
+ }
   nav ul {
     display: flex;
     justify-content: center;
@@ -440,12 +446,16 @@ footer {
     padding: 50px; /* Add padding to separate cards */
     box-sizing: border-box; /* Include padding in card width */
     margin-left: 100px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+   
   }
 
+
   h3.project-name {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Fira Code', monospace;
   }
+
   .description {
     font-size: 25px;
   }
@@ -460,9 +470,11 @@ footer {
     padding-left: 300px;
   }
 
-  .footer-icon {
+  .footer-icon, .tech-icon, .chevronRight{
     font-size: 50px; /* Increase the icon size for smaller screens */
   }
+
+
 
 
 

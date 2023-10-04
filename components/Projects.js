@@ -33,7 +33,7 @@ const projects = [
         name: '// HLL0 WRLD',
         description: 'Discover basic information about any country by searching for it. Explore details such as population, languages spoken, currency, and more.',
         liveSite: 'https://hello-world-rose-sigma.vercel.app/',
-        img: '/images/helloworld.png',
+        img: '/images/hello-world-rose-sigma.vercel.app_.png',
         technologies: ['JavaScript', 'HTML', 'CSS', 'API'],
     } ,
     {
@@ -110,7 +110,7 @@ export default function Projects() {
     }
     return (
       <p className="tech-icon" key={techIndex}>
-        <IconComponent size={30} />
+        <IconComponent  />
       </p>
     );
   })}
