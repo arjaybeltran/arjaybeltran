@@ -416,13 +416,10 @@ footer {
     max-width: 400px; /* Set a maximum width for content on mobile */
   }
 
-  .left-el {
-    width: 80%; /* Set a width percentage for centering */
-    padding: 10px;
-    position: fixed; /* Fixed position at the top */
-    top: 0; /* Stick to the top */
-    transform: translateX(-20%); /* Center it precisely */
-  }
+ .left-el {
+  position: fixed;
+  margin-left: 220px;
+ }
 
   nav ul {
     display: flex;
