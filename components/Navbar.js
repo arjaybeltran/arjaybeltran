@@ -45,7 +45,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              <RiAppsLine className='nav-icon' /> projects. 
+              <RiAppsLine className='nav-icon'  /> projects. 
             </ScrollLink>
           </li>
           <li>

@@ -82,14 +82,9 @@ export default function Projects() {
     return (
 
         
-
+       
         <div id="project-container" className='project-container' >
           {projects.map((project, index) => (
-
-
-
-
-
 
             <div
               key={index}
@@ -101,7 +96,7 @@ export default function Projects() {
                     <img className='project-ss' src={project.img} alt='screenshot' />
                 </div>
 
-
+                
                 <div className='project-text'>
                 <a className='livesite' href={project.liveSite} target="_blank" rel="noopener noreferrer">
 
@@ -126,6 +121,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
+      
     
         
       );
