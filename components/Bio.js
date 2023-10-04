@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 export default function Bio() {
 
     const bio = 'I transitioned from Home Renovation to Software Engineering driven by curiosity and problem-solving. Proficient in JavaScript, Express, Node.js, Python, React, HTML, CSS, MVC framework, and REST APIs, I excel in collaboration and efficient code management using Git.'
@@ -16,11 +17,22 @@ export default function Bio() {
     const heading = `Crafting innovative code with a DIY spirit, I'm your software engineer for sleek, efficient solutions that ride the tech trend waves.`
     return (
     <div>
+      <div className='word'>
+        <p>&lt;html&gt;</p>
+        <p className='body'>&lt;body&gt;</p>
+        <p className='para'>&lt;p&gt;</p>
+      </div>
       <p className='bio-text'>{heading}</p>
       {/* <p className='bio-text'>{biop2}</p>
       <p className='bio-text'>{biop3}</p>
       <p className='bio-text'>{biop4}</p> */}
-
+      <div className='word'>
+        <p className='para'>&lt;/p&gt;</p>
+        <p className='body'>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+        
+        
+      </div>
 
     </div>
   );

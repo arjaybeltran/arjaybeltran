@@ -1,5 +1,14 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { CgBoy } from 'react-icons/cg'
+import { RiAppsLine } from 'react-icons/ri'
+import { HiOutlineLightBulb } from 'react-icons/hi'
+
+// const navIcons = {
+//   bio: SiAboutdotme,
+//   projects: GrProjects,
+//   experience: HiOutlineLightBulb
+// }
 
 export default function Navbar() {
   const leftElHeight= 150;
@@ -24,7 +33,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              // bio.
+              <CgBoy /> bio.
             </ScrollLink>
           </li>
           <li>
@@ -36,7 +45,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-               projects. //
+              <RiAppsLine /> projects. 
             </ScrollLink>
           </li>
           <li>
@@ -48,7 +57,7 @@ export default function Navbar() {
               offset={-leftElHeight} // Adjust the offset value according to your margin
               duration={50}
             >
-              // experience.
+              <HiOutlineLightBulb/> experience.
             </ScrollLink>
           </li>
         </ul>

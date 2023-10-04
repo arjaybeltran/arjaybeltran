@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Croissant+One&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Croissant+One&family=Fira+Code&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');:root {
   --primary-color: #ffa15e; /* Moonrise Kingdom orange */
   --secondary-color: #5a9b88; /* Moonrise Kingdom green */
   --background-color: #f4e4cd; /* Creamy background */
@@ -20,6 +19,18 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.word {
+  font-family: 'Fira Code', monospace;
+}
+
+.body {
+  margin-left: 20px;
+}
+
+.para {
+  margin-left: 40px;
+}
+
 .left-el h1 {
   font-family: 'Croissant One', cursive;
   font-size: 80px;
@@ -31,7 +42,7 @@ html {
 }
 
 .bio-text {
-  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-family: 'Fira Code', monospace;
 }
 
 body {
@@ -98,14 +109,9 @@ nav ul li:hover {
 }
 
 .bio-text{
-    letter-spacing: 4px;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 var(--blue-color),
-    1px -1px 0 var(--blue-color),
-    -1px 1px 0 var(--blue-color),
-    1px 1px 0 var(--blue-color);
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-left: 50px;
 }
 h1 {
     letter-spacing: 4px;
