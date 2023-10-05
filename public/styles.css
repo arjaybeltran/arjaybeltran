@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Croissant+One&family=Fira+Code&family=Lobster+Two&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik&display=swap');
 :root {
-  --primary-color: #ffa15e; /* Moonrise Kingdom orange */
-  --secondary-color: #5a9b88; /* Moonrise Kingdom green */
-  --background-color: #f4e4cd; /* Creamy background */
+  --secondary-color: rgb(42,37,76); /* Moonrise Kingdom orange */
+  --primary-color: rgb(45,96,73); /* Moonrise Kingdom green */
+  --background-color: rgb(218,209, 201); /* Creamy background */
   --blue-color: rgb(35,33,59);
   --red-color: rgb(210,50,38);
   --blue2-color: rgb(91,93,124);
 }
 
 :root {
-  --primary-font: 'Croissant One', cursive;
-  --secondary-font: 'Nanum Pen Script', cursive;
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Rubik', sans-serif;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -34,14 +35,8 @@ html {
 }
 
 .left-el h1 {
-  font-family: 'Croissant One', cursive;
-  font-size: 70px;
-  text-shadow:
-  -1px -1px 0 var(--blue-color),
-  1px -1px 0 var(--blue-color),
-  -1px 1px 0 var(--blue-color),
-  1px 1px 0 var(--blue-color);
-
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
   text-wrap: wrap;
 }
 
@@ -93,11 +88,11 @@ nav ul li:hover {
 }
 
 .title {
-    /* margin: 150px 20px 20px 20px; */
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    letter-spacing: 8px;
-    font-family: 'Lobster Two', sans-serif;
+    letter-spacing: 5px;
+    font-family: var(--secondary-font)
+  
   }
 
 #bio {
@@ -130,9 +125,9 @@ h1 {
 .navbar ul li {
     letter-spacing: 5px;
     padding: 10px;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 1000;
-    font-family: var(--secondary-font);
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -191,6 +186,7 @@ h1 {
 .tech-list {
   list-style: none;
   display:flex;
+  justify-content: center;
   
 }
 
@@ -333,7 +329,7 @@ footer {
 
 h3.project-name {
   font-size: 50px;
-  font-family: 'Fira Code', monospace;
+  font-family: var(--secondary-font);
   text-align: center;
 }
 
@@ -341,7 +337,7 @@ h3.project-name {
 
 .description {
   margin-right: 10px;
-  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-family: var(--secondary-font);
   font-size: 20px;
 }
 

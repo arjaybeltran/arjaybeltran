@@ -33,7 +33,7 @@ export default function Navbar() {
     <div className='left-el'>
       <div className='profile'>
         {/* <img className="profile-photo" src="/images/pp.jpeg" alt="profile photo" /> */}
-        <h1>arjay beltran</h1>
+        <h1>ARJAY BELTRAN</h1>
       </div>
 
       <nav className='navbar'>
