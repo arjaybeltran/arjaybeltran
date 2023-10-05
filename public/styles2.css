@@ -174,18 +174,18 @@ h1 {
 }
 
 .project-card {
-    margin-bottom: 20px;
+    margin: 10px 20px 20px 20px;
     height: auto;
     width: auto;
     display:grid;
     border: 3px solid;
-    border-radius: 0.25rem;
+    border-radius: 20px;
     
 }
 
 
 .project-text {
-  padding: 20px;
+  padding: 30px;
 }
 
 .tech-list {
@@ -205,7 +205,9 @@ h1 {
 .tech-icon { 
   margin-right: 10px;
 }
-
+.tech-list li:hover {
+  border: 2px solid var(--primary-color)
+}
 
 .tech-list li:last-child {
   margin-right: 0;
@@ -301,16 +303,17 @@ footer {
   text-decoration: none;
   font-weight: bold;
   color: var(--secondary-color);
+  padding: 5px;
 }
 
 .chevronRight {
   font-size: 20px;
-  margin-top: 10px;
-  margin-left: 600px;
+  margin-left: 350px;
+  margin-top: -5px;
 }
 
 .chevronRight:hover {
-  color: var(--background-color);
+  color: white;
 }
 
  .navlink:hover {
@@ -331,11 +334,7 @@ footer {
   color: var(--primary-color);
 }
 
-h3.project-name {
-  font-size: 50px;
-  font-family: 'Fira Code', monospace;
-  text-align: center;
-}
+
 
 
 

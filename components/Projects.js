@@ -7,6 +7,7 @@ import { SiExpress, SiPython, SiDjango, SiPostgresql, SiReact, SiMongodb} from '
 import { DiDjango } from 'react-icons/di'
 import { LiaNode } from 'react-icons/lia'
 import { TbApi } from 'react-icons/tb'
+import { FcGlobe } from 'react-icons/fc'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,7 +22,7 @@ const technologyIcons = {
     React: SiReact,
     Node: LiaNode,
     MongoDB: SiMongodb,
-    API: TbApi
+    API: TbApi,
 }
 
 
@@ -88,9 +89,9 @@ export default function Projects() {
             > 
             
 
-                <div className='project-ss'>
+                {/* <div className='project-ss'>
                     <img className='project-ss' src={project.img} alt='screenshot' />
-                </div>
+                </div> */}
 
 
                 <div className='project-text'>
