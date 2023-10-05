@@ -474,6 +474,10 @@ h3.project-name {
     font-size: 50px; /* Increase the icon size for smaller screens */
   }
 
+  .chevronRight {
+    margin-left: 10px;
+  }
+
 
 
 
