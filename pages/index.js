@@ -12,8 +12,8 @@ export default function Home() {
    
     <div className='index'>
       <Head>
-        <title>Arjay Beltran</title>
-        <link rel="icon" href="/images/ab1.png" />
+        <title>AB</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/8140/8140089.png" />
       </Head>
       <Layout>
         <div className='container'>
