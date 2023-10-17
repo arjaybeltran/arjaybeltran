@@ -246,7 +246,7 @@ footer {
   }
   
   footer ul li {
-    padding-right: 10px;
+    padding-right: 16px;
   }
   
   footer ul li:last-child {
@@ -472,13 +472,16 @@ h3 {
     width: 100%;
     text-align: center; /* Center text horizontally */
     background-color: var(--background-color);
-    margin-left: 230px;
+
   }
 
+ 
   .footer-icon, .tech-icon, .chevronRight{
     font-size: 30px; /* Increase the icon size for smaller screens */
   }
-
+  footer ul {
+    margin-left: 230px;
+  }
   .chevronRight {
     margin-left: 10px;
   }
