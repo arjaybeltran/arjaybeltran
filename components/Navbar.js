@@ -47,7 +47,7 @@ export default function Navbar() {
               offset={offset}
               duration={50}
             >
-              <CgBoy className='nav-icon' /> bio.
+              <CgBoy className='nav-icon' /> bio;
             </ScrollLink>
           </li>
           <li>
@@ -59,7 +59,7 @@ export default function Navbar() {
               offset={offset}
               duration={50}
             >
-              <RiAppsLine className='nav-icon' /> projects.
+              <RiAppsLine className='nav-icon' /> projects;
             </ScrollLink>
           </li>
           <li>
@@ -71,7 +71,7 @@ export default function Navbar() {
               offset={offset}
               duration={50}
             >
-              <HiOutlineLightBulb className='nav-icon' /> experience.
+              <HiOutlineLightBulb className='nav-icon' /> experience;
             </ScrollLink>
           </li>
         </ul>

@@ -10,7 +10,7 @@ const ContactInfo = {
 
 const Websites = [
 
-  { name: 'Portfolio', url: 'https://arjaybeltran.vercel.app/' }, //    change to deploy url
+  { name: 'Portfolio', url: 'https://arjaybeltran.com/' }, 
   { name: 'GitHub', url: 'https://github.com/Arjybltrn' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/arjaybeltran/' },
 ];
@@ -45,7 +45,7 @@ const WorkHistory = [
       location: 'Toronto, ON',
       duration: 'Mar 2022 - Mar 2023',
       responsibilities: [
-         'Completing work orders and service calls as a company representative. I excel in inspections, diagnosis, and repair, including tasks like drywall repair, painting, minor plumbing, and more. I communicate professionally with supervisors, co-workers, clients, and trades, while documenting service notes and providing timely updates for all work orders.',
+        "Maintained a professional and client-centric approach, efficiently handling service calls and work orders as the company's representative. Demonstrated exceptional skills in inspections, diagnoses, repairs, and meticulous documentation, highlighting a strong problem-solving ability and unwavering attention to detail."
       ],
     },
     {
@@ -54,8 +54,7 @@ const WorkHistory = [
       location: 'Toronto, ON',
       duration: 'Oct 2021 - Mar 2022',
       responsibilities: [
-        'Efficiently utilized power tools, hand tools, and auxiliary instruments to meet project deadlines. I assessed material requirements, estimated production costs, and prioritized tasks to prevent delays. I conducted thorough inspections of job sites pre and post-project completion to ensure adherence to standards. I consistently researched and complied with building codes and safety regulations. By addressing client needs and resolving concerns promptly, I ensured overall client satisfaction on every project.',
-      ],
+        "Utilized diverse problem-solving strategies and tools to consistently meet project deadlines and deliver top-quality outcomes. Demonstrated exceptional organizational skills in project planning, ensuring compliance with codes and safety standards, ultimately enhancing client satisfaction."      ],
     },
     {
       position: 'Assistant Manager',

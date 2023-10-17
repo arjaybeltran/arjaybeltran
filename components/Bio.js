@@ -15,7 +15,7 @@ export default function Bio() {
         <p className='body'>&lt;body&gt;</p>
         <p className='para'>&lt;p&gt;</p>
       </div>
-      <p className='bio-text'>{heading}</p>
+        <p className='bio-text'>{heading}</p>
       <div className='word'>
         <p className='para'>&lt;/p&gt;</p>
         <p className='body'>&lt;/body&gt;</p>

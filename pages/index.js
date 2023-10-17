@@ -12,7 +12,7 @@ export default function Home() {
    
     <div className='index'>
       <Head>
-        <title>AB</title>
+        <title>A:B</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/8140/8140089.png" />
       </Head>
       <Layout>

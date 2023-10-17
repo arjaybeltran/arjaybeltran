@@ -57,7 +57,7 @@ const projects = [
         id: 4,
         name: 'Trackly',
         description: 'Simplify your job application process with Trackly, a comprehensive job application tracker. Keep tabs on your applications, track progress, and stay organized in your job search.',
-        liveSite: 'https://legendary-halva-8abb3f.netlify.app/',
+        liveSite: 'https://trackwithtrackly.netlify.app/',
         img: '/images/trackly.png',
         technologies: ['MongoDB', 'Express','React', 'Node'],
     } ,

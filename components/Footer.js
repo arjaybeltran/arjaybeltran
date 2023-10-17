@@ -1,4 +1,8 @@
 import React from 'react';
+
+
+import { RiFileDownloadFill } from 'react-icons/ri'
+
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
@@ -21,8 +25,8 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="footer-icon"   />
+          <a href="https://drive.google.com/file/d/1OepyQ4JwhShC-GJQkhqm1eNV8arHvhGD/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+            <RiFileDownloadFill className="footer-icon"   />
           </a>
         </li>
       </ul>

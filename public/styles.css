@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Croissant+One&family=Fira+Code&family=Lobster+Two&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik&display=swap');
+
 :root {
-  --secondary-color: rgb(42,37,76); /* Moonrise Kingdom orange */
-  --primary-color: rgb(45,96,73); /* Moonrise Kingdom green */
-  --background-color: rgb(218,209, 201); /* Creamy background */
-  --blue-color: rgb(35,33,59);
+  --secondary-color: #EAB63E;
+  --primary-color: #355952;
+  --background-color: #FAF6E7;
+  --font-color: rgb(35,33,59);
   --red-color: rgb(210,50,38);
-  --blue2-color: rgb(91,93,124);
+  --hover-color: rgb(134,176,165);
+  --hover-border-color: rgb(225,177,45);
 }
+
+
+
+
 
 :root {
   --primary-font: 'Montserrat', sans-serif;
@@ -18,7 +24,6 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--background-color);
-    color: var(--secondary-color);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -80,7 +85,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: var(--secondary-color);
+    color: var(--background-color);
 }
   
 .main {
@@ -155,7 +160,7 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-radius: 20px;
+    border-radius:  0.25rem;
     
 }
 .experience {
@@ -165,7 +170,7 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-radius: 20px;
+    border-radius: 0.25rem;
 }
 
 .project-card {
@@ -173,9 +178,8 @@ h1 {
     height: auto;
     width: auto;
     display:grid;
-    border: 3px solid;
     border-radius: 0.25rem;
-    
+    border: solid 3px black;
 }
 
 
@@ -192,8 +196,7 @@ h1 {
 
 .tech-list ul {
   margin-right: 15px;
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  border: 2px solid var(--font-color);
   padding: 5px;
 
 }
@@ -208,13 +211,6 @@ h1 {
 }
 
 
-  .project-card {
-
-    --color1: var(--primary-color)
-    --color2: var(--secondary-color)
-  
-    
-  }
 
 
 .project-ss {
@@ -227,8 +223,9 @@ h1 {
 
 
 .project-card:hover {
-    background-color: var(--blue-color);
-    color: var(--background-color);
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    border: 3px solid;
     cursor: pointer;
 }
 
@@ -257,7 +254,8 @@ footer {
   }
 
   .footer-icon {
-    color:var(--secondary-color);
+    font-size: 25px;
+    color:var(--font-color);
   }
 
   .footer-icon:hover {
@@ -276,11 +274,13 @@ footer {
 
 .experience, .education {
   padding: 15px;
+
 }
 
 .resp {
   grid-row: 3 / 4;
   grid-column: 1 / 3;
+  font-family: var(--secondary-font);
 }
 
 
@@ -288,15 +288,22 @@ footer {
 
 .education:hover, .experience:hover {
   cursor: pointer;
-  background-color: var(--blue-color);
-  color: var(--background-color);
+  background-color: var(--secondary-color);
+  color: #e37769;
 }
 
 
-.livesite, .navlink {
+.livesite{
   text-decoration: none;
   font-weight: bold;
-  color: var(--secondary-color);
+  color: var(--font-color);
+}
+
+
+.navlink {
+  font-weight:bolder;
+  font-size: 20px;
+  color: var(--font-color);
 }
 
 .chevronRight {
@@ -311,7 +318,7 @@ footer {
 
  .navlink:hover {
   cursor: var(--color1);
-  color: var(--primary-color);
+  color: var(--secondary-color);
   
 }
 
@@ -324,15 +331,14 @@ footer {
 }
 
 .livesite:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 h3.project-name {
-  font-size: 50px;
+  font-size: 40px;
   font-family: var(--secondary-font);
   text-align: center;
 }
-
 
 
 .description {
@@ -341,15 +347,19 @@ h3.project-name {
   font-size: 20px;
 }
 
-.date {
+.date, h4 {
   color: #777;
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 600;
+  margin-left: 5px;
 }
 
-.profile-photo {
-  border: solid 3px var(--blue2-color);
+h3 {
+  font-family: var(--primary-font);
+  margin-left: 5px;
 }
+
 
 
 .tech-icon {
@@ -359,12 +369,15 @@ h3.project-name {
 
 
 
+
+
+
 /* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 844px) {
   body {
     display: block; /* Change from grid to block for mobile layout */
-    margin: 0; /* Remove margin for mobile layout */
-    padding-bottom: 80px; /* Add padding at the bottom to accommodate the fixed footer */
+    margin: 0; 
+    padding-bottom: 80px; /* padding at the bottom to accommodate the fixed footer */
     padding-top: 200px;
   }
 
@@ -437,20 +450,16 @@ h3.project-name {
   .experience,
   .education,
   .project-card {
-    width: 100%; /* Make cards full width on mobile */
-    margin: 0; /* Remove margins for cards */
-    padding: 50px; /* Add padding to separate cards */
-    box-sizing: border-box; /* Include padding in card width */
+    width: 100%; 
+    margin: 0; 
+    padding: 50px; 
+    box-sizing: border-box; 
     margin-left: 100px;
     margin-bottom: 20px;
+  
    
   }
 
-
-  h3.project-name {
-    font-size: 50px;
-    font-family: 'Fira Code', monospace;
-  }
 
   .description {
     font-size: 25px;
@@ -463,11 +472,11 @@ h3.project-name {
     width: 100%;
     text-align: center; /* Center text horizontally */
     background-color: var(--background-color);
-    padding-left: 300px;
+    margin-left: 230px;
   }
 
   .footer-icon, .tech-icon, .chevronRight{
-    font-size: 50px; /* Increase the icon size for smaller screens */
+    font-size: 30px; /* Increase the icon size for smaller screens */
   }
 
   .chevronRight {
