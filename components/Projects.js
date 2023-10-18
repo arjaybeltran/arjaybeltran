@@ -81,7 +81,7 @@ export default function Projects() {
     
  
     return (
-        <div id="project-container" className='project-container' >
+        <div id="project-container" className='project-container' data-aos="zoom-in-up">
           {projects.map((project) => (
             <div
               key={project.id}

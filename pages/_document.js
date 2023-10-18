@@ -9,9 +9,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
             rel="stylesheet"
           />
-          {/* <link 
-            href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Open+Sans&display=swap" 
-            rel="stylesheet" /> */}
          <link 
             href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Croissant+One&family=Nanum+Pen+Script&family=Open+Sans&display=swap" 
             rel="stylesheet" />

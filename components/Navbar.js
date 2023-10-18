@@ -4,6 +4,8 @@ import { CgBoy } from 'react-icons/cg';
 import { RiAppsLine } from 'react-icons/ri';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 
+
+
 export default function Navbar() {
   const [offset, setOffset] = useState(-120); // Default offset for larger screens
 
@@ -13,7 +15,7 @@ export default function Navbar() {
       if (window.innerWidth <= 845) {
         setOffset(-120); // Adjust offset for smaller screens
       } else {
-        setOffset(-140); 
+        setOffset(-190); 
       }
     };
 
@@ -31,6 +33,7 @@ export default function Navbar() {
 
   return (
     <div className='left-el'>
+      
       <div className='profile'>
         {/* <img className="profile-photo" src="/images/pp.jpeg" alt="profile photo" /> */}
         <h1>arjay beltran</h1>
