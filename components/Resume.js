@@ -40,6 +40,14 @@ const Education = [
 
 const WorkHistory = [
     {
+      position: 'Software Engineer Apprentice',
+      company: 'General Assembly',
+      location: 'Remote/Toronto',
+      duration: 'Mar 2023 - June 2023',
+      responsibilities: [
+        "Developed full-stack applications featuring CRUD operations and RESTful APIs, incorporating JavaScript and React for front-end development and Python and Django for back-end functionality. Additionally, completed an intensive 450-hour Software Engineering Immersive program."],
+    },
+    {
       position: 'Customer Care Technician',
       company: 'Madison Group',
       location: 'Toronto, ON',

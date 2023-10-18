@@ -5,15 +5,15 @@ import { RiAppsLine } from 'react-icons/ri';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 
 export default function Navbar() {
-  const [offset, setOffset] = useState(-150); // Default offset for larger screens
+  const [offset, setOffset] = useState(-120); // Default offset for larger screens
 
   useEffect(() => {
     // Update offset based on screen width
     const updateOffset = () => {
-      if (window.innerWidth <= 844) {
-        setOffset(-200); // Adjust offset for smaller screens
+      if (window.innerWidth <= 845) {
+        setOffset(-120); // Adjust offset for smaller screens
       } else {
-        setOffset(-120); // Default offset for larger screens
+        setOffset(-140); 
       }
     };
 

@@ -106,6 +106,7 @@ nav ul li:hover {
     width: auto;
     line-height: 1.25;
     margin-bottom: 10px;
+    margin-top: 80px;
 }
 
 .bio-text{
@@ -118,23 +119,18 @@ h1 {
     font-size: 60px;
 }
 
-.profile-photo {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-left: 120px;
-}
 
 
 
 /* navbar css */
 
 .navbar ul li {
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     padding: 10px;
     font-size: 20px;
     font-weight: 1000;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -370,11 +366,33 @@ h3 {
 
 
 
+/* underconstruction css */
+
+.under-construction {
+  background-color: var(--background-color); /* Background color */
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle elevation effect */
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the component horizontally */
+  margin-top: 300px; /* Add top margin for spacing */
+}
+
+.under-construction h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.under-construction p {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+}
 
 
 
 
-/* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
+
 @media (max-width: 844px) {
   body {
     display: block; /* Change from grid to block for mobile layout */
@@ -388,11 +406,7 @@ h3 {
     max-width: 400px; /* Set a maximum width for content on mobile */
   }
 
-  .profile-photo {
-    width: 100px;
-    height: 100px;
-    margin-left: 200px;
-  }
+
 
  .left-el {
   background-color: var(--background-color);
@@ -401,20 +415,10 @@ h3 {
  }
 
 
- .profile {
-  text-align: center;
-  display: flex;
-  padding-bottom: 5px;
- }
+
 
  #projects, #resume {
   padding-top: 50px;
- }
- .left-el h1 {
-  margin-right: 150px;
-  margin-left: 20px;
-  padding-top: 8px;
-  font-size: 35px;
  }
 
  .tech-icon {
@@ -423,6 +427,10 @@ h3 {
   nav ul {
     display: flex;
     justify-content: center;
+  }
+
+  .left-el h1 {
+    font-size: 60px;
   }
 
   .navlink {
@@ -453,9 +461,7 @@ h3 {
   .education,
   .project-card {
     width: 100%; 
-    margin: 0; 
     padding: 50px; 
-    box-sizing: border-box; 
     margin-left: 100px;
     margin-bottom: 20px;
   
@@ -482,7 +488,7 @@ h3 {
     font-size: 30px; /* Increase the icon size for smaller screens */
   }
   footer ul {
-    margin-left: 230px;
+    margin-left: 240px;
   }
   .chevronRight {
     margin-left: 10px;
@@ -494,45 +500,14 @@ h3 {
 
   #bio {
     font-size: 25px;
-    margin-top: 220px;
-    margin-left: 220px; /* Add margin to push it below the .left-el */
+    margin-left: 220px; 
   }
 
-  .title {
-    margin-left: 220px;
+  h2 {
+    margin-left: 300px;
+  }
+
+  h1 {
+    text-align: center;
   }
 }
-
-
-
-
-
-
-/* underconstruction css */
-
-.under-construction {
-  background-color: var(--background-color); /* Background color */
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle elevation effect */
-  max-width: 400px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center the component horizontally */
-  margin-top: 300px; /* Add top margin for spacing */
-}
-
-.under-construction h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.under-construction p {
-  font-size: 20px;
-  font-family: var(--secondary-font);
-}
-
-
-
-
-
-
