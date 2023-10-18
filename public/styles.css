@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Croissant+One&family=Fira+Code&family=Lobster+Two&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik&family=Unica+One&display=swap');
 
 :root {
   --secondary-color: #EAB63E;
@@ -29,6 +30,7 @@ html {
 
 .word {
   font-family: 'Fira Code', monospace;
+  font-size: 12px;
 }
 
 .body {
@@ -40,7 +42,7 @@ html {
 }
 
 .left-el h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Unica One', sans-serif;
   font-size: 40px;
   text-wrap: wrap;
 }
@@ -259,7 +261,7 @@ footer {
   }
 
   .footer-icon:hover {
-    color:var(--primary-color);
+    color:var(--secondary-color);
   }
 
 /* ------------------------ */
