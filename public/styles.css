@@ -30,7 +30,7 @@ html {
 
 .word {
   font-family: 'Fira Code', monospace;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .body {
@@ -158,7 +158,7 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-radius:  0.25rem;
+    border-radius:  10px;
     
 }
 .experience {
@@ -168,7 +168,7 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
-    border-radius: 0.25rem;
+    border-radius: 10px;
 }
 
 .project-card {
@@ -176,7 +176,7 @@ h1 {
     height: auto;
     width: auto;
     display:grid;
-    border-radius: 0.25rem;
+    border-radius: 10px;
     border: solid 3px black;
 }
 
@@ -443,7 +443,8 @@ h3 {
   }
 
   .word {
-    padding-top: 50px;
+    padding-top: 40px;
+    font-size: 26px;
   }
 
  .projects {
@@ -488,7 +489,7 @@ h3 {
     font-size: 30px; /* Increase the icon size for smaller screens */
   }
   footer ul {
-    margin-left: 240px;
+    justify-content: center;
   }
   .chevronRight {
     margin-left: 10px;
@@ -510,4 +511,25 @@ h3 {
   h1 {
     text-align: center;
   }
+
+  .education h4 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .education h3 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .date {
+    width: 300px;
+  }
+
+
+  .experience h4, .experience h3 {
+    font-size: 25px;
+  }
+  .resp {
+    font-size: 25px;
+  }
+
 }

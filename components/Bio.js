@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import { BsCode, BsCodeSlash } from 'react-icons/bs';
 
 export default function Bio() {
 
@@ -11,15 +11,20 @@ export default function Bio() {
     return (
     <div className='bio'>
       <div className='word'>
-        <p>&lt;html&gt;</p>
+        <BsCode />
+        {/* <p>&lt;html&gt;</p>
         <p className='body'>&lt;body&gt;</p>
-        <p className='para'>&lt;p&gt;</p>
+        <p className='para'>&lt;p&gt;</p> */}
       </div>
+
         <p className='bio-text'>{heading}</p>
+
       <div className='word'>
-        <p className='para'>&lt;/p&gt;</p>
+
+        <BsCodeSlash />
+        {/* <p className='para'>&lt;/p&gt;</p>
         <p className='body'>&lt;/body&gt;</p>
-        <p>&lt;/html&gt;</p>        
+        <p>&lt;/html&gt;</p>         */}
       </div>
     </div>
   );
