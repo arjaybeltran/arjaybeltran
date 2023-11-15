@@ -33,7 +33,7 @@ const Education = [
   //   image: 'https://mir-s3-cdn-cf.behance.net/user/276/44b879739647173.6227d366197b1.png'
   // },
   {
-    degree: 'Ontario College Advanced Diploma, Computer Programmer Analyst',
+    degree: 'Ontario College Advanced Diploma',
     institution: 'George Brown College',
     year: 'Sep 2015 - Apr 2017',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/George_Brown_College_logo.svg/2560px-George_Brown_College_logo.svg.png'

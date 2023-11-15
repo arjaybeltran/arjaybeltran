@@ -50,7 +50,7 @@ export default function Navbar() {
               offset={offset}
               duration={50}
             >
-              <CgBoy className='nav-icon' /> bio;
+              <CgBoy className='nav-icon' /> about;
             </ScrollLink>
           </li>
           <li>

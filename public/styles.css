@@ -1,3 +1,7 @@
+/* * {
+  cursor: url(https://cdn.custom-cursor.com/db/10498/32/cute-ghost-cursor.png) , default !important
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Croissant+One&family=Fira+Code&family=Lobster+Two&family=Nanum+Pen+Script&family=Open+Sans&family=Roboto+Mono&family=Sofia+Sans+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rubik&family=Unica+One&display=swap');
@@ -45,17 +49,11 @@ html {
   font-family: 'Unica One', sans-serif;
   font-size: 40px;
   text-wrap: wrap;
-  transition: transform 0.3s linear;
 }
 
-.left-el h1:hover {
-  font-size: 50px;
-  transform: rotate(360deg);
-}
 
-.left
 
-.bio-text {
+.left .bio-text {
   font-family: 'Fira Code', monospace;
 }
 
@@ -71,14 +69,14 @@ html {
 }
 
 .skillsList > li {
-  font-size: 80px;
+  font-size: 65px;
   width: 30%;
 }
 
 body {
     scroll-behavior: smooth;
     display: grid;
-  
+    cursor: url(https://cdn.custom-cursor.com/db/10498/32/cute-ghost-cursor.png) , default !important;  
 }
 .index {
     margin: 35px 300px 0 300px;
@@ -99,7 +97,6 @@ body {
 
 nav ul {
     list-style: none;
-    cursor: pointer;
 }
 
 nav ul li {
@@ -108,6 +105,7 @@ nav ul li {
 
 nav ul li:hover {
     color: var(--background-color);
+    cursor: url(https://cdn.custom-cursor.com/db/10497/32/cute-ghost-pointer.png) , pointer !important;
 }
   
 .main {
@@ -245,7 +243,6 @@ h1 {
     background-color:var(--primary-color);
     color: var(--secondary-color);
     border: 3px solid;
-    cursor: pointer;
 }
 
 
@@ -279,6 +276,7 @@ footer {
 
   .footer-icon:hover {
     color:var(--secondary-color);
+    cursor: url(https://cdn.custom-cursor.com/db/10497/32/cute-ghost-pointer.png) , pointer !important;
   }
 
 /* ------------------------ */
@@ -306,7 +304,6 @@ footer {
 /* -------------- */
 
 .education:hover, .experience:hover {
-  cursor: pointer;
   background-color: var(--secondary-color);
   color: #e37769;
 }
@@ -321,6 +318,7 @@ footer {
 
 .livesite:hover {
   color: var(--secondary-color);
+  cursor: url(https://cdn.custom-cursor.com/db/10497/32/cute-ghost-pointer.png) , pointer !important;
 }
 
 
@@ -333,8 +331,8 @@ footer {
 
 
  .navlink:hover {
-  cursor: var(--color1);
   color: var(--secondary-color);
+  cursor: url(https://cdn.custom-cursor.com/db/10497/32/cute-ghost-pointer.png) , pointer !important;
   
 }
 
@@ -342,7 +340,7 @@ footer {
   transition: transform 0.3s ease; /* Add a transition for smooth rotation */
 }
 
-.nav-icon:hover, .navlink:hover{
+.nav-icon:hover{
   transform: rotate(45deg); 
 }
 
@@ -586,3 +584,6 @@ h3 {
 .tech-icon:active {
   transform: scale(1.1);
 }
+
+
+

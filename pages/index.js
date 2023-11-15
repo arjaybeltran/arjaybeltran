@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/8140/8140089.png" />
       </Head>
       <Layout>
+  
         <div className='container'>
           {/* bio */}
           <section id='bio' className='section'>
