@@ -8,6 +8,7 @@ import { DiDjango } from 'react-icons/di'
 import { LiaNode } from 'react-icons/lia'
 import { TbApi } from 'react-icons/tb'
 import { FcGlobe } from 'react-icons/fc'
+import { LiaLongArrowAltRightSolid } from "react-icons/lia"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -95,9 +96,10 @@ export default function Projects() {
 
 
                 <div className='project-text'>
-                <a className='livesite' href={project.liveSite} target="_blank" rel="noopener noreferrer">
+                
+                {/* <p className='chevronRight'>  </p> */}
+                
 
-                    <p className='chevronRight'><PiArrowSquareOutFill /></p>
                     <h3 className='project-name'>{project.name} </h3>
                     <p className='description'>{project.description}</p>
                     <div className='tech-stack'>
@@ -116,8 +118,11 @@ export default function Projects() {
     );
   })}
 </ul>
+<a className='livesite' href={project.liveSite} target="_blank" rel="noopener noreferrer">
+                Visit   <LiaLongArrowAltRightSolid /> 
+</a>
                     </div> 
-                    </a> 
+                    
                 </div>
             </div>
           ))}
