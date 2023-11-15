@@ -77,10 +77,7 @@ export default function Projects() {
 
     useEffect(() => {
         AOS.init();
-      }, []);  
-      
-    
- 
+      }, []); 
     return (
         <div id="project-container" className='project-container' data-aos="zoom-in-up">
           {projects.map((project) => (
@@ -96,10 +93,6 @@ export default function Projects() {
 
 
                 <div className='project-text'>
-                
-                {/* <p className='chevronRight'>  </p> */}
-                
-
                     <h3 className='project-name'>{project.name} </h3>
                     <p className='description'>{project.description}</p>
                     <div className='tech-stack'>
