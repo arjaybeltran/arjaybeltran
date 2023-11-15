@@ -61,7 +61,6 @@ html {
 
 .skillsTitle {
   text-align: center;
-  font-family: 'Fira Code', monospace;
 }
 
 .skillsList {
@@ -115,7 +114,7 @@ nav ul li:hover {
     grid-column: 2 / 3;
 }
 
-.title {
+.title, .skillsTitle {
     font-size: 40px;
     text-align: center;
     letter-spacing: 5px;
