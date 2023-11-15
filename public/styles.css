@@ -163,8 +163,8 @@ h1 {
     margin: 35px 20px 50px 20px;
     height: auto;
     width: auto;
-    display:grid;
-    grid-template-columns: 1fr 2fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     border: 3px solid;
     border-radius:  10px;
     
@@ -173,7 +173,7 @@ h1 {
     margin: 35px 20px 50px 20px;
     height: auto;
     width: 100%;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 2fr;
     border: 3px solid;
     border-radius: 10px;
@@ -220,12 +220,12 @@ h1 {
 
 
 .project-ss {
-    height: 80px;
-    width: 130px;
-    margin: 0;
-    padding-top: 50px;
-    padding-left: 20px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
+
+
 
 
 .project-card:hover {
@@ -361,9 +361,30 @@ h3.project-name {
   margin-left: 5px;
 }
 
+.edu-ss {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  position: relative;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.institution {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+ align-content: center;
+}
+
+.degree {
+  grid-row: 2 / 3;
+}
+
 h3 {
   font-family: var(--primary-font);
   margin-left: 5px;
+  grid-row: 1 / 2;
 }
 
 
@@ -503,7 +524,7 @@ h3 {
   .chevronRight {
     margin-left: 10px;
   }
-
+ol
 
   #bio {
     font-size: 25px;

@@ -34,7 +34,7 @@ const projects = [
         name: '// HLL0 WRLD',
         description: 'Discover basic information about any country by searching for it. Explore details such as population, languages spoken, currency, and more.',
         liveSite: 'https://hello-world-rose-sigma.vercel.app/',
-        img: '/images/hello-world-rose-sigma.vercel.app_.png',
+        img: '/images/helloworld.png',
         technologies: ['JavaScript', 'HTML', 'CSS', 'API'],
     } ,
     {
@@ -89,9 +89,9 @@ export default function Projects() {
             > 
             
 
-                {/* <div className='project-ss'>
+                <div className='project-ss'>
                     <img className='project-ss' src={project.img} alt='screenshot' />
-                </div> */}
+                </div>
 
 
                 <div className='project-text'>

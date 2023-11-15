@@ -24,16 +24,19 @@ const Education = [
     degree: 'Software Engineering Certificate' ,
     institution: 'General Assembly',
     year: 'Mar 2023 - May 2023',
+    image: 'https://generalassemb.ly/sites/default/files/inline-images/RGB-Red-Black_Small_GeneralAssembly-Stacked_0.png'
   },
-  {
-    degree: 'Home Construction Technology Certificate' ,
-    institution: 'York Construction Academy',
-    year: 'Dec 2020 - Apr 2021',
-  },
+  // {
+  //   degree: 'Home Construction Technology Certificate' ,
+  //   institution: 'York Construction Academy',
+  //   year: 'Dec 2020 - Apr 2021',
+  //   image: 'https://mir-s3-cdn-cf.behance.net/user/276/44b879739647173.6227d366197b1.png'
+  // },
   {
     degree: 'Ontario College Advanced Diploma, Computer Programmer Analyst',
     institution: 'George Brown College',
     year: 'Sep 2015 - Apr 2017',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/George_Brown_College_logo.svg/2560px-George_Brown_College_logo.svg.png'
   },
   
 ]
@@ -42,7 +45,7 @@ const WorkHistory = [
     {
       position: 'Software Engineer Apprentice',
       company: 'General Assembly',
-      location: 'Remote/Toronto',
+      location: 'Toronto',
       duration: 'Mar 2023 - June 2023',
       responsibilities: [
         "Developed full-stack applications featuring CRUD operations and RESTful APIs, incorporating JavaScript and React for front-end development and Python and Django for back-end functionality. Additionally, completed an intensive 450-hour Software Engineering Immersive program."],
@@ -93,8 +96,10 @@ const WorkHistory = [
             <div key={index} className='education' data-aos="fade-right">
               <h4 className='date'>{edu.year}</h4>
               <h3>Education</h3>
-              <h4>{edu.degree}</h4>
-              <h4>{edu.institution}</h4>
+              <h4 className='degree'>{edu.degree}</h4>
+              <h4 className='institution'>{edu.institution}</h4>
+              <img className='edu-ss' src={edu.image} alt='company logo' />
+             
               
             </div>
           ))}
@@ -106,8 +111,8 @@ const WorkHistory = [
             <div key={index} className='experience' data-aos="fade-left">
               <h4 className='date'>{job.duration}</h4>
               <h3>Work History</h3>
-              <h4>{job.position}</h4>
-              <h4>{job.company} - {job.location}</h4>
+              <h4 className='jobPosition'>{job.position}</h4>
+              <h4 className='jobCompany'>{job.company} - {job.location}</h4>
               
               <p className='resp'>{job.responsibilities}</p>
             </div>
