@@ -79,12 +79,16 @@ export default function Projects() {
         AOS.init();
       }, []); 
     return (
+     
+       
         <div id="project-container" className='project-container' data-aos="zoom-in-up">
           {projects.map((project) => (
+            
             <div
               key={project.id}
               className="project-card" 
             > 
+            
             
 
                 <div className='project-ss'>
@@ -120,5 +124,6 @@ export default function Projects() {
             </div>
           ))}
         </div>
+  
       );
   }

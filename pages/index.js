@@ -6,6 +6,9 @@ import Resume from '../components/Resume';
 import Head from 'next/head';
 import '../public/styles.css';
 import UnderConstruction from '../components/UnderConstruction';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Home() {
   return (
@@ -16,7 +19,6 @@ export default function Home() {
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/8140/8140089.png" />
       </Head>
       <Layout>
-  
         <div className='container'>
           {/* bio */}
           <section id='bio' className='section'>
@@ -24,7 +26,7 @@ export default function Home() {
           </section>
 
           {/* projects */}
-          <section id='projects' className='section'>
+          <section id='projects' className='section' >
             <h2 className='title'>PROJECTS</h2>
             <Projects />
           </section>

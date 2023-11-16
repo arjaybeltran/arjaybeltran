@@ -69,8 +69,9 @@ html {
 }
 
 .skillsList > li {
-  font-size: 65px;
-  width: 30%;
+  font-size: 48px;
+  width: 22%;
+  text-align: center;
 }
 
 body {
@@ -587,3 +588,21 @@ h3 {
 
 
 
+/* ScrollIcon.css */
+.scroll-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-icon.visible {
+  opacity: 1;
+}
+
+.scroll-icon.hidden {
+  opacity: 0;
+}
